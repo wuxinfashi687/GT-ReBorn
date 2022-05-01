@@ -1,0 +1,34 @@
+{
+    "weight": 50,
+    "density": 0.25,
+    "max_height": 60,
+    "min_height": 30,
+    "vein_populator": {
+        "type": "surface_rock",
+        "material": "black_ore"
+      },
+    "generator": {
+        "type": "layered",
+        "radius": [
+          20,
+          32
+        ]
+      },
+    "filler": {
+        "type": "layered",
+        "values": [
+          {
+            "primary": "ore:black_ore"
+          },
+          {
+            "secondary": "ore:black_ore"
+          },
+          {
+            "between": "ore:black_ore"
+          },
+          {
+            "sporadic": "ore:black_ore"
+          }
+        ]
+      }
+}
