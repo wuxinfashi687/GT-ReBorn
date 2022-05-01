@@ -2,28 +2,6 @@
 "versionName": "0.0.0.1",         
 "versionCode": 1,
 "versionFormat": "%versionName%",
-"category": "gold",
-                "displayName": "sponsors.test",
-"titleFormat": ["GOLD", "BOLD"],
-"sponsorFormat": ["GOLD"],
-"name": "TCreopargh",
-"uuid": "2d06868c-6d9b-433a-a356-1a7993b62b8d"       
-},
-{
-"name": "Notch"
-},
-"Dinnerbone"       
-]
-},
-{
-"category": "diamond",
-"titleFormat": ["AQUA", "BOLD"],
-"sponsorFormat": ["AQUA"],
-"sponsors": [{
-"name": "Herobrine"
-}]
-}
-],
 "text": "Thank all of you for sponsoring!",
 "color": "gold"
 }, {
