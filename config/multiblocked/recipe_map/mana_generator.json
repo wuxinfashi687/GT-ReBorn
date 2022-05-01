@@ -1,0 +1,39 @@
+{
+  "name": "mana_generator",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "recipes": [
+    {
+      "uid": "mana_generator_1",
+      "duration": 19,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"botania:specialflower\",Count:1b,tag:{type:\"hydroangeas\"},Damage:0s}"
+              ]
+            },
+            "chance": 0.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"water\",Amount:100}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "gtce_energy": [
+          {
+            "content": 32,
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    }
+  ]
+}
