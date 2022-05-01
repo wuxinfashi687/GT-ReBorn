@@ -15,7 +15,7 @@
 "action": "open_url",
 "value": "http://patreon.tcreopargh.xyz/"
 }
-}],
+}
 "changelogs": {       
 },
 "testInt": 1000,
@@ -31,7 +31,6 @@
 "222",
 "333"
 ]
-}
 },
 "welcomeMessage": ["", {     
 "text": "Hello, welcome to play ",      
