@@ -9,3 +9,10 @@ import mods.botania.Apothecary;
 Apothecary.addRecipe(<researchtable:table>, [
     <botania:altar>, <botania:specialflower>.withTag({type: "hydroangeas"})
     ]);
+
+#基础Mana生产器
+recipes.addShaped(<gtrb:basic_mana_machine>, [
+    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>],
+    [<botania:livingrock>, <gregtech:meta_block_frame_1875:4>, <botania:livingrock>], 
+    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>]
+]);

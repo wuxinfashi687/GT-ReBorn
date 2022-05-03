@@ -3,7 +3,7 @@ created by 2022.05.02
 此脚本为cot自定义物品部分
 */
 
-#priority 802
+#priority 9003
 #loader contenttweaker
 
 import mods.contenttweaker.VanillaFactory;
