@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    此脚本由wuxinfashi编辑，未经许可禁止抄袭
+    created by 2022.05.03
+    此脚本为游戏内信息显示部分
+-->
+<config>
+    <lines at="topleft">
+        <line><str> </str></line>
+        <line><str> </str></line>
+        <line><str> </str></line>
+        <line><str> </str></line>
+        <line><str> </str></line>
+        <line><str> </str></line>
+        <line><str> </str></line>
+        <line><str> </str></line>
+        <line>
+            <icon>
+                <str>contenttweaker:red_tech_bottle</str>
+                <num>0</num>
+            </icon>
+            <str>{gold}欢迎来到GT:重生!</str>
+        </line>
+        <line>
+            <icon>
+                <str>galacticraftcore:rocket_t1</str>
+                <num>0</num>
+            </icon>
+            <str>{yellow}当前所在维度: </str>
+            <operation>
+                <str>EQ</str>
+                <var>dimension</var>
+                    <str>overworld</str>
+                    <str>the_nether</str>
+                    <str>the_end</str>
+                    <str>moon.moon</str>
+                        <str>{white}主世界</str>
+                        <str>{white}地狱</str>
+                        <str>{white}末地</str>
+                        <str>{white}月球</str>
+            </operation>
+        </line>
+        <line>
+            <icon>
+                <str>gregtech:meta_item_1</str>
+                <num>465</num>
+            </icon>
+            <str>{lightpurple}fps: </str>
+            <operation>
+                <str>GE</str>
+                <var>fps</var>
+                    <num>120</num>
+                    <num>60</num>
+                    <num>30</num>
+                    <num>0</num>
+                        <str>{gold}{fps} </str>
+                        <str>{green}{fps} </str>
+                        <str>{yellow}{fps} </str>
+                        <str>{red}{fps} </str>
+            </operation>
+            <str>{darkaqua}坐标: {blue}{xi} {yi} {zi}</str> 
+        </line>
+        <line>
+            <str>{lightpurple}已使用/总分配内存: </str>
+            <round>
+                <div>
+                    <var>memused</var>
+                    <num>1048576000</num>
+                </div>
+                <num>1</num>
+            </round>
+            <str>G/</str>
+            <round>
+                <div>
+                    <var>memmax</var>
+                    <num>1048576000</num>
+                </div>
+                <num>1</num>
+            </round> 
+            <str>G </str>
+            <op>
+                <str>le</str>
+                <pct>
+                    <var>memused</var>
+                    <var>memmax</var>
+                </pct>
+                <num>5</num>
+                <num>10</num>
+                <num>15</num>
+                <num>20</num>
+                <num>25</num>
+                <num>30</num>
+                <num>35</num>
+                <num>40</num>
+                <num>45</num>
+                <num>50</num>
+                <num>55</num>
+                <num>60</num>
+                <num>65</num>
+                <num>70</num>
+                <num>75</num>
+                <num>80</num>
+                <num>85</num>
+                <num>90</num>
+                <num>95</num>
+                <num>100</num>
+                <str>$2$l$m|$7$l|||||||||||||||||||</str>
+                <str>$2$l$m||$7$l||||||||||||||||||</str>
+                <str>$2$l$m|||$7$l|||||||||||||||||</str>
+                <str>$a$l$m||||$7$l||||||||||||||||</str>
+                <str>$a$l$m|||||$7$l|||||||||||||||</str>
+                <str>$a$l$m||||||$7$l||||||||||||||</str>
+                <str>$a$l$m|||||||$7$l|||||||||||||</str>
+                <str>$a$l$m||||||||$7$l||||||||||||</str>
+                <str>$a$l$m|||||||||$7$l|||||||||||</str>
+                <str>$a$l$m||||||||||$7$l||||||||||</str>
+                <str>$a$l$m|||||||||||$7$l|||||||||</str>
+                <str>$a$l$m||||||||||||$7$l||||||||</str>
+                <str>$e$l$m|||||||||||||$7$l|||||||</str>
+                <str>$e$l$m||||||||||||||$7$l||||||</str>
+                <str>$6$l$m|||||||||||||||$7$l|||||</str>
+                <str>$6$l$m||||||||||||||||$7$l||||</str>
+                <str>$c$l$m|||||||||||||||||$7$l|||</str>
+                <str>$c$l$m||||||||||||||||||$7$l||</str>
+                <str>$4$l$m|||||||||||||||||||$7$l|</str>
+                <str>$4$l$m||||||||||||||||||||</str>
+            </op>  
+        </line>
+    </lines>
+</config>

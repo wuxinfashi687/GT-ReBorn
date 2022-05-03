@@ -15,4 +15,5 @@ function create_custom_item(item_name as string) as void {
     cot_item.register();        
 }
 
+# 红色科技瓶
 create_custom_item("red_tech_bottle");
