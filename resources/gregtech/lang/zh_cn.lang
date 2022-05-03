@@ -1,3 +1,5 @@
-material.black_ore=黑色矿石
-material.yellow_ore=黄色矿石
-material.blue_ore=蓝色矿石
+material.black_ore=黑色物质
+material.yellow_ore=黄色物质
+material.blue_ore=蓝色物质
+material.magic_ore=魔法物质
+material.liquid_mana=液态Mana

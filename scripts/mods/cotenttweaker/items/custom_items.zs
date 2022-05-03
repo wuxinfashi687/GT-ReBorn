@@ -3,7 +3,7 @@ created by 2022.05.02
 此脚本为cot自定义物品部分
 */
 
-#priority 802
+#priority 9003
 #loader contenttweaker
 
 import mods.contenttweaker.VanillaFactory;
@@ -15,4 +15,10 @@ function create_custom_item(item_name as string) as void {
     cot_item.register();        
 }
 
+# 红色科技瓶
 create_custom_item("red_tech_bottle");
+
+# 蓝色科技瓶
+create_custom_item("blue_tech_bottle");
+
+#

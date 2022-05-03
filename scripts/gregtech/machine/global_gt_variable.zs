@@ -3,7 +3,7 @@ created by 2022.05.01
 此脚本为格雷机器全局变量部分
 */
 
-#priority 400
+#priority 9002
 
 import mods.gregtech.recipe.RecipeMap;
 

@@ -4,7 +4,7 @@ created by 2022.05.01
 */
 
 #loader gregtech
-#priority 1000
+#priority 9000
 
 import mods.gregtech.material.Material;
 import mods.gregtech.material.MaterialBuilder;
@@ -17,14 +17,22 @@ MaterialBuilder(32001, "black_ore")
     .color(0x000000)
     .build();
 
-#黄色矿石
+# 黄色矿石
 MaterialBuilder(32002, "yellow_ore")
     .ore(2, 1, true)
     .color(0xFFFF00)
     .build();
 
-#蓝色矿石
+# 蓝色矿石
 MaterialBuilder(32003, "blue_ore")
     .ore(2, 1, true)
     .color(0x87CEFA)
+    .build();
+
+# 魔力物质矿石
+MaterialBuilder(30004, "magic_ore")
+    .ore(2, 1, true)
+    .ingot()
+    .flags(["generate_plate", "generate_bolt_screw","generate_rod", "generate_ring","generate_frame"])
+    .color(0x9400D3)
     .build();
