@@ -180,7 +180,9 @@
             <str>{darkgreen}区块相对坐标: {yellow}{chunkoffsetx}/{chunkoffsetz} </str>
         </line>
     </lines>
-    <lines at="">
-
+    <lines at="bottomleft">
+        <line>
+            
+        </line>
     </lines>
 </config>
