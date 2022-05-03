@@ -17,3 +17,8 @@ function create_custom_item(item_name as string) as void {
 
 # 红色科技瓶
 create_custom_item("red_tech_bottle");
+
+# 蓝色科技瓶
+create_custom_item("blue_tech_bottle");
+
+#
