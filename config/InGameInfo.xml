@@ -23,6 +23,32 @@
         </line>
         <line>
             <icon>
+                <str>minecraft:clock</str>
+                <num>0</num>
+            </icon>
+            <str>{yellow}日期: {white}第</str>
+            <round>
+                <add>
+                    <div>
+                        <var>day</var>
+                        <num>365</num>
+                    </div>
+                    <num>1</num>
+                </add>
+                <num>0</num>
+            </round>
+            <str>年 第</str>
+            <round>
+                <mod>
+                    <var>day</var>
+                    <num>365</num>
+                </mod>
+                <num>0</num>
+            </round>
+            <str>天</str>
+        </line>
+        <line>
+            <icon>
                 <str>galacticraftcore:rocket_t1</str>
                 <num>0</num>
             </icon>
@@ -125,6 +151,33 @@
                 <str>$4$l$m|||||||||||||||||||$7$l|</str>
                 <str>$4$l$m||||||||||||||||||||</str>
             </op>  
+        </line>
+        <line>
+            <icon>
+                <str>minecraft:skull</str>
+                <num>0</num>
+            </icon>
+            <str>{blue}已渲染/已加载实体数: {yellow}{entitiesrendered}/{entitiestotal} </str>
+        </line>
+        <line>
+            <icon>
+                <str>minecraft:compass</str>
+                <num>0</num>
+            </icon>
+            <str>{darkaqua}面朝: {yellow}</str>
+            <operation>
+                <str>EQ</str>
+                <var>abrroughdirection</var>
+                    <str>N</str>
+                    <str>S</str>
+                    <str>E</str>
+                    <str>W</str>
+                        <str>北 </str>
+                        <str>南 </str>
+                        <str>东 </str>
+                        <str>西 </str>
+            </operation>
+            <str>{darkgreen}区块相对坐标: {yellow}{chunkoffsetx}/{chunkoffsetz} </str>
         </line>
     </lines>
 </config>
