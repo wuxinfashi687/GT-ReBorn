@@ -11,6 +11,7 @@ import mods.gregtech.material.MaterialBuilder;
 import mods.gregtech.material.MaterialRegistry;
 import mods.gregtech.material.Elements;
 
+//T1矿
 # 黑色矿石
 MaterialBuilder(32001, "black_ore")
     .ore(2, 1, true)
@@ -33,6 +34,44 @@ MaterialBuilder(32003, "blue_ore")
 MaterialBuilder(30004, "magic_ore")
     .ore(2, 1, true)
     .ingot()
+    .toolStats(10.2, 7.5, 1024, 25)
     .flags(["generate_plate", "generate_bolt_screw","generate_rod", "generate_ring","generate_frame"])
     .color(0x9400D3)
+    .build();
+
+//T2矿
+# 陨铁
+MaterialBuilder(30005, "coahuilite")
+    .ore(2, 1, false)
+    .ingot()
+    .flags(["generate_plate", "generate_bolt_screw","generate_rod", "generate_ring","generate_frame"])
+    .color(0xDCDCDC)
+    .build();
+
+# 玄铁
+MaterialBuilder(30006, "darksteel")
+    .ore(1, 1, true)
+    .ingot()
+    .flags(["generate_plate", "generate_bolt_screw","generate_rod", "generate_ring","generate_frame"])
+    .color(0x800000)
+    .build();
+
+# 银色物质矿石
+MaterialBuilder(30007, "sliver_ore")
+    .ore(2, 1, true)
+    .color(0xC0C0C0)
+    .build();
+
+# 橙色物质矿石
+MaterialBuilder(30008, "orange_ore")
+    .ore(2, 1, true)
+    .color(0xFFA500)
+    .build();
+
+# 精灵矿石
+MaterialBuilder(30009, "elves_ore")
+    .ore(2, 1, true)
+    .ingot()
+    .flags(["generate_plate", "generate_bolt_screw","generate_rod", "generate_ring","generate_frame"])
+    .color(0x98FB98)
     .build();

@@ -13,8 +13,8 @@
       "dimName": "Nether"
     },
     {
-      "dimID": -28,
-      "dimName": "Moon.moon"
+      "dimID": 2,
+      "dimName": "Moon"
     }
   ]
 }

@@ -1,0 +1,108 @@
+{
+  "consumeCatalyst": false,
+  "location": "gtrb:basic_magic_generator",
+  "traits": {
+    "item": [
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "x": 33,
+        "y": 53,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "x": 56,
+        "y": 53,
+        "autoIO": false
+      }
+    ],
+    "background": "multiblocked:textures/magic_generator_gui.png",
+    "fluid": [
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "x": 33,
+        "y": 75,
+        "autoIO": false,
+        "tC": 4000
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "x": 56,
+        "y": 75,
+        "autoIO": false,
+        "tC": 4000
+      }
+    ],
+    "gtce_energy": {
+      "cIO": 1,
+      "gIO": 2,
+      "x": 109,
+      "y": 66,
+      "width": 36,
+      "height": 16,
+      "texture": "multiblocked:textures/magic_generator_energy_gui.png",
+      "capacity": 4000
+    }
+  },
+  "allowRotate": true,
+  "showInJei": true,
+  "baseRenderer": {
+    "baseTexture": "multiblocked:livingrock_base",
+    "frontTexture": "multiblocked:off",
+    "upTexture": "multiblocked:basic_magic_generator_top",
+    "type": "gregtech"
+  },
+  "workingRenderer": {
+    "baseTexture": "multiblocked:livingrock_base",
+    "frontTexture": "multiblocked:on",
+    "upTexture": "multiblocked:basic_magic_generator_top_work",
+    "type": "gregtech"
+  },
+  "isOpaqueCube": false,
+  "basePattern": {
+    "structureDir": [
+      "BACK",
+      "UP",
+      "RIGHT"
+    ],
+    "pattern": [
+      [
+        "@"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "controller": {
+        "location": "gtrb:basic_magic_generator",
+        "type": "component"
+      },
+      "air": {
+        "type": "air"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "-": [
+        "air"
+      ]
+    }
+  },
+  "recipeMap": "magic_generate"
+}
