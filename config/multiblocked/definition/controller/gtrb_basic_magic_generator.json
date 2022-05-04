@@ -8,14 +8,14 @@
         "gIO": 2,
         "x": 33,
         "y": 53,
-        "autoIO": false
+        "autoIO": true
       },
       {
         "cIO": 0,
         "gIO": 2,
         "x": 56,
         "y": 53,
-        "autoIO": false
+        "autoIO": true
       }
     ],
     "background": "multiblocked:textures/magic_generator_gui.png",
@@ -25,7 +25,7 @@
         "gIO": 2,
         "x": 33,
         "y": 75,
-        "autoIO": false,
+        "autoIO": true,
         "tC": 4000
       },
       {
@@ -33,7 +33,7 @@
         "gIO": 2,
         "x": 56,
         "y": 75,
-        "autoIO": false,
+        "autoIO": true,
         "tC": 4000
       }
     ],
@@ -42,9 +42,9 @@
       "gIO": 2,
       "x": 109,
       "y": 66,
-      "width": 36,
+      "width": 35,
       "height": 16,
-      "texture": "multiblocked:textures/magic_generator_energy_gui.png",
+      "texture": "multiblocked:textures/gui/energy_bar.png",
       "capacity": 4000
     }
   },
