@@ -7,7 +7,8 @@ import crafttweaker.item.IItemStack;
 
 # 待移除的配方
 var botania_items as IItemStack[] = [
-    <botania:biomestonea:13>
+    <botania:biomestonea:13>,
+    <botania:altar>
 ];
 
 #循环移除
