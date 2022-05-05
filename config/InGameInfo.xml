@@ -41,11 +41,12 @@
                 </mod>
                 <num>0</num>
             </round>
-            <str>天</str>
+            <str>天 </str>
+            <var>mctime24</var>
         </line>
         <line>
             <icon>
-                <str>galacticraftcore:rocket_t1</str>
+                <str>advancedrocketry:satellite</str>
                 <num>0</num>
             </icon>
             <str>{yellow}当前所在维度: </str>
@@ -176,9 +177,158 @@
             <str>{darkgreen}区块相对坐标: {yellow}{chunkoffsetx}/{chunkoffsetz} </str>
         </line>
     </lines>
-    <lines at="bottomleft">
+    <lines at="middleleft">
         <line>
-            
+            <if>
+                <and>
+                    <not><var>thundering</var></not>
+                    <var>raining</var>
+                </and>
+                    <icon>
+                        <str>botania:waterbowl</str>
+                        <num>0</num>
+                    </icon>
+            </if>
+            <if>
+                <and>
+                    <not><var>thundering</var></not>
+                    <var>raining</var>
+                </and>
+                    <str>{bold}当前正在下雨!</str>
+            </if>
+            <if>
+                <var>thundering</var>
+                    <icon>
+                        <str>botania:waterbowl</str>
+                        <num>0</num>
+                    </icon>
+            </if>
+            <if>
+                <var>thundering</var>
+                    <str>{bold}当前正在打雷!</str>
+            </if>
         </line>
+    </lines>
+    <lines at ="bottleright">
+        <line>
+            <operation>
+                <str>NE</str>
+                <var>mainhandquantity</var>
+                    <num>0</num>
+                        <var>mainhandicon</var>
+            </operation>
+            <operation>
+                <str>NE</str>
+                <var>mainhandquantity</var>
+                    <num>0</num>
+                        <str>{mainhandquantity}</str>
+            </operation>
+        </line>
+        <line>
+            <operation>
+                <str>NE</str>
+                <var>helmetmaxdamage</var>
+                    <num>-1</num>
+                        <str>{helmeticon}</str>
+            </operation>
+            <operation>
+                <str>NE</str>
+                <var>helmetmaxdamage</var>
+                    <num>-1</num>
+                        <str>{helmetdamageleft}</str>
+            </operation>
+            <operation>
+                <str>NE</str>
+                <var>helmetmaxdamage</var>
+                    <num>-1</num>
+                        <str>/</str>
+            </operation>
+            <operation>
+                <str>NE</str>
+                <var>helmetmaxdamage</var>
+                    <num>-1</num>
+                        <str>{helmetmaxdamage}</str>
+            </operation>
+        </line>
+        <line>
+            <operation>
+                <str>NE</str>
+                <var>chestplatemaxdamage</var>
+                    <num>-1</num>
+                        <str>{chestplateicon}</str>
+            </operation>
+            <operation>
+                <str>NE</str>
+                <var>chestplatemaxdamage</var>
+                    <num>-1</num>
+                        <str>{chestplatedamageleft}</str>
+            </operation>
+            <operation>
+                <str>NE</str>
+                <var>chestplatemaxdamage</var>
+                    <num>-1</num>
+                        <str>/</str>
+            </operation>
+            <operation>
+                <str>NE</str>
+                <var>chestplatemaxdamage</var>
+                    <num>-1</num>
+                        <str>{chestplatemaxdamage}</str>
+            </operation>
+        </line>
+        <line>
+            <operation>
+                <str>NE</str>
+                <var>leggingsmaxdamage</var>
+                    <num>-1</num>
+                        <str>{leggingsicon}</str>
+            </operation>
+            <operation>
+                <str>NE</str>
+                <var>leggingsmaxdamage</var>
+                    <num>-1</num>
+                        <str>{leggingsdamageleft}</str>
+            </operation>
+            <operation>
+                <str>NE</str>
+                <var>leggingsmaxdamage</var>
+                    <num>-1</num>
+                        <str>/</str>
+            </operation>
+            <operation>
+                <str>NE</str>
+                <var>leggingsmaxdamage</var>
+                    <num>-1</num>
+                        <str>{leggingsmaxdamage}</str>
+            </operation>
+        </line>
+        <line>
+            <operation>
+                <str>NE</str>
+                <var>bootsmaxdamage</var>
+                    <num>-1</num>
+                        <str>{bootsicon}</str>
+            </operation>
+            <operation>
+                <str>NE</str>
+                <var>bootsmaxdamage</var>
+                    <num>-1</num>
+                        <str>{bootsdamageleft}</str>
+            </operation>
+            <operation>
+                <str>NE</str>
+                <var>bootsmaxdamage</var>
+                    <num>-1</num>
+                        <str>/</str>
+            </operation>
+            <operation>
+                <str>NE</str>
+                <var>bootsmaxdamage</var>
+                    <num>-1</num>
+                        <str>{bootsmaxdamage}</str>
+            </operation>
+        </line>
+    </lines>
+    <lines at="bottlecenter">
     </lines>
 </config>
