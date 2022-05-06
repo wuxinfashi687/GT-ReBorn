@@ -32,3 +32,13 @@ recipes.addShaped(<gregtech:meta_plate:1068>, [
     [null, <ore:ingotRubber>, null],
     [null, <gregtech:meta_tool:6>, null]
 ]);
+
+# 锻铁锭
+furnace.addRecipe(<gregtech:meta_ingot:335>, <ore:ingotIron>, 1);
+
+# 电池合金
+recipes.addShaped(<gregtech:meta_dust:256>, [
+    [<ore:dustLead>, <ore:dustLead>, <ore:dustLead>],
+    [<ore:dustLead>, <ore:dustLead>, <ore:dustAntimony>],
+    [null, null, null]
+]);

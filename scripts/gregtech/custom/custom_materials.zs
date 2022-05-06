@@ -14,21 +14,32 @@ import mods.gregtech.material.Elements;
 //T1矿
 # 黑色矿石
 MaterialBuilder(32001, "black_ore")
-    .ore(2, 2, true)
-    .addOreByproducts(<material:oilsands>, <material:coal>)
-    .components([<material:oilsands>*1, <material:coal>*1])
+    .ore(3, 3, true)
+    .addOreByproducts(<material:graphite>)
+    .components([<material:oilsands>*1, <material:coal>*2])
     .color(0x000000)
     .build();
 
 # 黄色矿石
 MaterialBuilder(32002, "yellow_ore")
-    .ore(2, 2, true)
+    .ore(4, 10, true)
+    .components([
+        <material:iron>*3, <material:copper>*3, <material:tin>*3, <material:gold>*1
+        ])
+    .addOreByproducts(<material:sphalerite>)
     .color(0xFFFF00)
     .build();
 
 # 蓝色矿石
 MaterialBuilder(32003, "blue_ore")
-    .ore(2, 2, true)
+    .ore(5, 10, true)
+    .components([
+        <material:aluminium>*2, <material:nickel>*2, <material:diamond>*1
+    ])
+    .addOreByproducts(<material:asbestos>)
+    .washedIn(<material:sulfuric_acid>)
+    .macerateInto(<material:silver>)
+    .polarizesInto(<material:cobaltite>)
     .color(0x87CEFA)
     .build();
 

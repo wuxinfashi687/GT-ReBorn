@@ -1,0 +1,94 @@
+{
+  "name": "magic_alloy",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "recipes": [
+    {
+      "uid": "magic_alloy_1",
+      "duration": 100,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "ore": "dustSulfur"
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "amount": 2,
+              "matches": [
+                "{id:\"gregtech:rubber_log\",Count:2b,Damage:0s}"
+              ]
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"liquid_mana\",Amount:50}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_ingot\",Count:1b,Damage:1068s}"
+              ]
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "magic_alloy_2",
+      "duration": 300,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "ore": "ingotIron"
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "amount": 1,
+              "ore": "gemCoal"
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"liquid_mana\",Amount:300}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_ingot\",Count:1b,Damage:324s}"
+              ]
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    }
+  ]
+}
