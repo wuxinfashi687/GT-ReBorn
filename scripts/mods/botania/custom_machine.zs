@@ -6,7 +6,7 @@ created by 2022.05.02
 # 基础Mana生产器
 recipes.addShaped(<gtrb:basic_mana_machine>, [
     [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>],
-    [<botania:livingrock>, <gregtech:meta_block_frame_1875:4>, <botania:livingrock>], 
+    [<botania:livingrock>, <ore:frameGtMagicOre>, <botania:livingrock>], 
     [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>]
 ]);
 
