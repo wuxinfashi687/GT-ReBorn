@@ -10,7 +10,10 @@ import crafttweaker.item.IItemStack;
 
 # 基础植物学
 var basic_botania_items as IItemStack[] = [
-    <gtrb:basic_mana_machine>
+    <gtrb:basic_mana_machine>,
+    <gtrb:basic_magic_generator>,
+    <gtrb:basic_magic_alloy_furnace>,
+    <gtrb:basic_mana_generator>
 ];
 
 for i, item in basic_botania_items {
