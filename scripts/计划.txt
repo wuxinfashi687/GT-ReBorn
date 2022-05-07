@@ -3,3 +3,4 @@
 三、匠魂材料
 四、自行造肉
 top: ore processing
+石英岩、大型研磨机

@@ -15,7 +15,7 @@ import mods.gregtech.material.Elements;
 # 黑色矿石
 MaterialBuilder(32001, "black_ore")
     .ore(3, 3, true)
-    .addOreByproducts(<material:graphite>)
+    .addOreByproducts(<material:graphite>, <material:vanadium_magnetite>)
     .components([<material:oilsands>*1, <material:coal>*2])
     .color(0x000000)
     .build();
@@ -26,7 +26,8 @@ MaterialBuilder(32002, "yellow_ore")
     .components([
         <material:iron>*3, <material:copper>*3, <material:tin>*3, <material:gold>*1
         ])
-    .addOreByproducts(<material:sphalerite>)
+    .addOreByproducts(<material:sphalerite>, <material:ruby>)
+    .washedIn(<material:sulfuric_acid>)
     .color(0xFFFF00)
     .build();
 
@@ -36,10 +37,9 @@ MaterialBuilder(32003, "blue_ore")
     .components([
         <material:aluminium>*2, <material:nickel>*2, <material:diamond>*1
     ])
-    .addOreByproducts(<material:asbestos>)
+    .addOreByproducts(<material:asbestos>, <material:bauxite>, <material:cobaltite>)
     .washedIn(<material:sulfuric_acid>)
     .macerateInto(<material:silver>)
-    .polarizesInto(<material:cobaltite>)
     .color(0x87CEFA)
     .build();
 
