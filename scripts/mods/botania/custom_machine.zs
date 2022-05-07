@@ -23,3 +23,10 @@ recipes.addShaped(<gtrb:basic_magic_alloy_furnace>, [
     [<ore:craftingFurnace>, <ore:frameGtMagicOre>, <ore:craftingFurnace>],
     [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>]
 ]);
+
+# 基础mana离心机
+recipes.addShaped(<gtrb:centrifuge>, [
+    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>],
+    [<ore:plateDoubleMagicOre>, <ore:frameGtMagicOre>, <ore:plateDoubleMagicOre>],
+    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>]
+]);

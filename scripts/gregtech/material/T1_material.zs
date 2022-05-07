@@ -42,3 +42,20 @@ recipes.addShaped(<gregtech:meta_dust:256>, [
     [<ore:dustLead>, <ore:dustLead>, <ore:dustAntimony>],
     [null, null, null]
 ]);
+
+# 木炭
+furnace.addRecipe(<minecraft:coal:1>, <ore:logWood>, 1);
+
+# 桶
+recipes.addShaped(<minecraft:bucket>, [
+    [null, null, null],
+    [<ore:plateMagicOre>, <gregtech:meta_tool:6>, <ore:plateMagicOre>],
+    [null, <ore:plateMagicOre>, null]
+]);
+
+# 火把
+recipes.addShaped(<minecraft:torch>, [
+    [null, <ore:dustMagicOre>, null],
+    [null, <ore:stickWood>, null],
+    [null, null, null]
+]);

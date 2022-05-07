@@ -88,3 +88,19 @@ MaterialBuilder(30009, "elves_ore")
     .flags(["generate_plate", "generate_bolt_screw","generate_rod", "generate_ring","generate_frame"])
     .color(0x98FB98)
     .build();
+
+# 火箭防护板
+MaterialBuilder(30010, "rocket_plate")
+    .flags(["generate_plate"])
+    .color(0xB0C4DE)
+    .build();
+
+//致密板
+# 致密钢板
+<material:steel>.addFlags("generate_dense");
+# 致密铝板
+<material:aluminium>.addFlags("generate_dense");
+# 致密不锈钢板
+<material:stainless_steel>.addFlags("generate_dense");
+# 致密钛板
+<material:titanium>.addFlags("generate_dense");
