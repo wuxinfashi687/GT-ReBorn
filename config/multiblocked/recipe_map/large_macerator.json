@@ -19,7 +19,7 @@
         ],
         "fluid": [
           {
-            "content": "{FluidName:\"liquid_mana\",Amount:25}",
+            "content": "{FluidName:\"liquid_mana\",Amount:100}",
             "chance": 1.0
           }
         ]
@@ -41,6 +41,53 @@
       "tickOutputs": {}
     },
     {
+      "uid": "large_macerator_4",
+      "duration": 35,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_crushed\",Count:1b,Damage:32003s}"
+              ]
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"liquid_mana\",Amount:75}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_dust_impure\",Count:1b,Damage:32003s}"
+              ]
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_dust\",Count:1b,Damage:253s}"
+              ]
+            },
+            "chance": 0.2
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
       "uid": "large_macerator_1",
       "duration": 60,
       "inputs": {
@@ -55,7 +102,7 @@
         ],
         "fluid": [
           {
-            "content": "{FluidName:\"liquid_mana\",Amount:25}",
+            "content": "{FluidName:\"liquid_mana\",Amount:100}",
             "chance": 1.0
           }
         ]
@@ -91,7 +138,7 @@
         ],
         "fluid": [
           {
-            "content": "{FluidName:\"liquid_mana\",Amount:25}",
+            "content": "{FluidName:\"liquid_mana\",Amount:100}",
             "chance": 1.0
           }
         ]
@@ -106,6 +153,194 @@
               ]
             },
             "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "large_macerator_7",
+      "duration": 35,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_crushed\",Count:1b,Damage:32001s}"
+              ]
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"liquid_mana\",Amount:75}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_dust_impure\",Count:1b,Damage:32001s}"
+              ]
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_dust\",Count:1b,Damage:341s}"
+              ]
+            },
+            "chance": 0.2
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "large_macerator_8",
+      "duration": 35,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_crushed_purified\",Count:1b,Damage:32001s}"
+              ]
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"liquid_mana\",Amount:75}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_dust_pure\",Count:1b,Damage:32001s}"
+              ]
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_dust\",Count:1b,Damage:2022s}"
+              ]
+            },
+            "chance": 0.2
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "large_macerator_5",
+      "duration": 35,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_crushed_purified\",Count:1b,Damage:32003s}"
+              ]
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"liquid_mana\",Amount:75}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_dust_pure\",Count:1b,Damage:32003s}"
+              ]
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_dust\",Count:1b,Damage:286s}"
+              ]
+            },
+            "chance": 0.2
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "large_macerator_6",
+      "duration": 35,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_crushed\",Count:1b,Damage:32002s}"
+              ]
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"liquid_mana\",Amount:75}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_dust_impure\",Count:1b,Damage:32002s}"
+              ]
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_dust\",Count:1b,Damage:322s}"
+              ]
+            },
+            "chance": 0.2
           }
         ]
       },

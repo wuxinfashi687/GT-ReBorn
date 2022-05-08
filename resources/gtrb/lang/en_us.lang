@@ -10,3 +10,4 @@ basic_living_wood_block.name=Livingwood Casing
 basic_mana_input_bus.name=Basic Mana Input Bus
 basic_mana_output_bus.name=Basic mana Output Bus
 basic_mana_item_output_bus.name=Basic Mana Item Output Bus
+isomerization_platform.name=Isomerization Platform
