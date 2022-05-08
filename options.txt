@@ -123,6 +123,7 @@ key_key.craftingtweaks.refill_last:15
 key_key.craftingtweaks.refill_last_stack:15
 key_key.toggleLiquids:38
 key_key.toggleVisible:0
+key_invtweaks.key.sort:19
 key_开关喷气背包:45
 key_打开火箭界面:0
 key_切换 RCS:19
