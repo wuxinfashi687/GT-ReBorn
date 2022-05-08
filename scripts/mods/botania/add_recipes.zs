@@ -10,6 +10,13 @@ Apothecary.addRecipe(<researchtable:table>, [
     <botania:altar>, <botania:specialflower>.withTag({type: "hydroangeas"})
     ]);
 
+# 火红莲
+Apothecary.removeRecipe(<botania:specialflower>.withTag({type: "endoflame"}));
+Apothecary.addRecipe(<botania:specialflower>.withTag({type: "endoflame"}), [
+    <ore:petalBrown>, <ore:petalBrown>, <ore:petalRed>, <ore:petalLightGray>,
+    <ore:dustSteel>, <ore:dustMagicOre>
+]);
+
 # 花药台
 for i in 0 to 16 {
     recipes.addShaped(<botania:altar>, [

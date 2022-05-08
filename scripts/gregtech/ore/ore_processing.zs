@@ -11,3 +11,12 @@ centrifuge.recipeBuilder()
     .duration(60)
     .EUt(12)
     .buildAndRegister();
+
+# 下界石英和赛特斯石英粉
+chemical_bath.recipeBuilder()
+    .inputs(<ore:quartzMana>)
+    .fluidInputs(<liquid:water>*100)
+    .outputs([<gregtech:meta_dust:214>, <minecraft:quartz>])
+    .duration(100)
+    .EUt(12)
+    .buildAndRegister();
