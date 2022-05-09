@@ -36,3 +36,12 @@ ResearchTable.builder("botania_auto_control", botania_)
     .addCondition(<contenttweaker:red_tech_bottle>*64)
     .setRewardStages("botania_auto_control")
     .build();
+
+# 基础植魔自动化装置
+ResearchTable.builder("basic_botania_auto_machine", botania_)
+    .setIcons(<gtrb:large_macerator>)
+    .setTitle("基础植魔自动化装置")
+    .addCondition(<contenttweaker:red_tech_bottle>*128)
+    .setRewardStages("basic_botania_auto_machine")
+    .build();
+    
