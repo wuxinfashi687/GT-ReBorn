@@ -5,6 +5,7 @@ created by 2022.05.01
 
 import mods.gregtech.recipe.RecipeMap;
 
+# 黑色矿石出油砂
 centrifuge.recipeBuilder()
     .inputs(<gregtech:meta_dust:32001>)
     .outputs([<gregtech:meta_dust:271>, <gregtech:meta_dust:1597>])

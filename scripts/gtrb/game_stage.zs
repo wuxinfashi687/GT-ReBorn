@@ -20,3 +20,16 @@ var basic_botania_items as IItemStack[] = [
 for i, item in basic_botania_items {
     setRecipeStage("basic_botania", item);
 }
+
+# 基础魔法控制理论
+var botania_auto_control_items as IItemStack[] = [
+    <gtrb:basic_mana_item_output_bus>,
+    <gtrb:basic_living_rock_block>,
+    <gtrb:basic_living_wood_block>,
+    <gtrb:basic_mana_input_bus>,
+    <gtrb:basic_mana_output_bus>
+];
+
+for i, item in basic_botania_items {
+    setRecipeStage("botania_auto_control", item);
+}

@@ -1,14 +1,14 @@
 {
   "guiScale": 4,
-  "hudScale": 3,
+  "hudScale": 4,
   "tooltipScale": 3,
   "customIndividualGuiScales": {
     "net.minecraft.client.gui.GuiIngameMenu": {
-      "scale": 3,
+      "scale": 4,
       "name": "net.minecraft.client.gui.GuiIngameMenu"
     },
     "gregtech.api.gui.impl.ModularUIGui": {
-      "scale": 3,
+      "scale": 4,
       "name": "gregtech.api.gui.impl.ModularUIGui"
     },
     "mcjty.theoneprobe.config.TopModConfigGui": {
@@ -22,6 +22,30 @@
     "spazley.scalingguis.gui.guiconfig.GuiConfigSG": {
       "scale": 4,
       "name": "spazley.scalingguis.gui.guiconfig.GuiConfigSG"
+    },
+    "mezz.jei.gui.recipes.RecipesGui": {
+      "scale": 3,
+      "name": "mezz.jei.gui.recipes.RecipesGui"
+    },
+    "net.minecraft.client.gui.GuiChat": {
+      "scale": 4,
+      "name": "net.minecraft.client.gui.GuiChat"
+    },
+    "net.minecraft.client.gui.inventory.GuiInventory": {
+      "scale": 4,
+      "name": "net.minecraft.client.gui.inventory.GuiInventory"
+    },
+    "net.minecraft.client.gui.GuiCustomizeSkin": {
+      "scale": 4,
+      "name": "net.minecraft.client.gui.GuiCustomizeSkin"
+    },
+    "guichaguri.betterfps.gui.GuiBetterFpsConfig": {
+      "scale": 4,
+      "name": "guichaguri.betterfps.gui.GuiBetterFpsConfig"
+    },
+    "net.minecraftforge.fml.client.config.GuiConfig": {
+      "scale": 4,
+      "name": "net.minecraftforge.fml.client.config.GuiConfig"
     }
   },
   "customGroupGuiScales": {
@@ -36,37 +60,41 @@
     "net.minecraft.client.gui.GuiScreenWorking": {
       "scale": 4,
       "name": "net.minecraft.client.gui.GuiScreenWorking"
+    },
+    "net.minecraft.client.gui.inventory.GuiContainerCreative": {
+      "scale": 5,
+      "name": "net.minecraft.client.gui.inventory.GuiContainerCreative"
     }
   },
   "loggedGuiClassNames": [
     "net.optifine.gui.GuiDetailSettingsOF",
     "net.optifine.gui.GuiQualitySettingsOF",
-    "net.minecraft.client.gui.inventory.GuiChest",
     "slimeknights.tconstruct.tools.common.client.GuiStencilTable",
     "snownee.researchtable.client.gui.GuiTable",
     "mcjty.theoneprobe.config.TopModConfigGui",
     "net.minecraftforge.fml.client.GuiModList",
     "net.optifine.gui.GuiOtherSettingsOF",
     "net.optifine.gui.GuiPerformanceSettingsOF",
-    "net.minecraft.client.gui.GuiChat",
-    "net.optifine.gui.GuiChatOF",
     "net.minecraft.client.gui.inventory.GuiFurnace",
     "net.minecraft.client.gui.GuiScreenOptionsSounds",
     "net.minecraft.client.gui.GuiScreenResourcePacks",
     "com.cleanroommc.multiblocked.api.gui.modular.ModularUIGuiContainer",
-    "mezz.jei.gui.recipes.RecipesGui",
+    "net.minecraft.client.gui.inventory.GuiChest",
+    "net.minecraft.client.gui.GuiChat",
+    "net.optifine.gui.GuiChatOF",
+    "gregtech.api.gui.impl.ModularUIGui",
     "net.minecraft.client.gui.GuiMainMenu",
     "net.minecraft.client.gui.GuiWorldSelection",
     "net.minecraft.client.gui.GuiScreenWorking",
     "net.minecraft.client.gui.GuiDownloadTerrain",
-    "gregtech.api.gui.impl.ModularUIGui",
-    "spazley.scalingguis.gui.guiconfig.GuiSelectStringSG",
-    "spazley.scalingguis.gui.guiconfig.GuiConfigSG$GuiNewScale",
-    "guichaguri.betterfps.gui.GuiBetterFpsConfig",
-    "net.minecraftforge.fml.client.config.GuiConfig",
+    "mezz.jei.gui.recipes.RecipesGui",
     "net.minecraft.client.gui.inventory.GuiInventory",
     "net.minecraft.client.gui.inventory.GuiContainerCreative",
+    "spazley.scalingguis.gui.guiconfig.GuiSelectStringSG",
+    "spazley.scalingguis.gui.guiconfig.GuiConfigSG$GuiNewScale",
+    "net.minecraftforge.fml.client.config.GuiConfig",
     "net.minecraft.client.gui.GuiCustomizeSkin",
+    "guichaguri.betterfps.gui.GuiBetterFpsConfig",
     "net.minecraft.client.gui.GuiIngameMenu",
     "net.minecraft.client.gui.GuiOptions",
     "net.minecraft.client.gui.GuiVideoSettings",

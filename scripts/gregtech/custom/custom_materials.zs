@@ -95,6 +95,13 @@ MaterialBuilder(30010, "rocket_plate")
     .color(0xB0C4DE)
     .build();
 
+# 注册现有的魔力钢
+MaterialBuilder(30011, "magic_steel")
+    .ingot()
+    .flags(["generate_plate", "generate_bolt_screw","generate_rod", "generate_ring","generate_frame"])
+    .color(0x00BFFF)
+    .build();
+
 //致密板
 # 致密钢板
 <material:steel>.addFlags("generate_dense");
