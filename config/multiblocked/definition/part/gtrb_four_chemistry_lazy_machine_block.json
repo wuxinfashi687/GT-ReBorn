@@ -1,0 +1,13 @@
+{
+  "canShared": true,
+  "location": "gtrb:four_chemistry_lazy_machine_block",
+  "traits": {},
+  "allowRotate": true,
+  "showInJei": true,
+  "baseRenderer": {
+    "baseTexture": "multiblocked:four_chemistry_lazy_machine",
+    "frontTexture": "multiblocked:four_chemistry_lazy_machine",
+    "type": "gregtech"
+  },
+  "isOpaqueCube": false
+}

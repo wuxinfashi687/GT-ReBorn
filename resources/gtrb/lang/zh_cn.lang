@@ -11,3 +11,5 @@ basic_mana_input_bus.name=基础mana输入总线
 basic_mana_output_bus.name=基础mana输入仓
 basic_mana_item_output_bus.name=基础mana输出总线
 isomerization_platform.name=异构转化台
+clean_stainless_machine_block.name=洁净不锈钢机械方块
+four_chemistry_lazy_machine_block.name=聚四氟乙烯化学惰性机械方块

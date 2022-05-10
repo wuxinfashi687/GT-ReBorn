@@ -11,3 +11,5 @@ basic_mana_input_bus.name=Basic Mana Input Bus
 basic_mana_output_bus.name=Basic mana Output Bus
 basic_mana_item_output_bus.name=Basic Mana Item Output Bus
 isomerization_platform.name=Isomerization Platform
+clean_stainless_machine_block.name=Clean Stainless Machine Block
+four_chemistry_lazy_machine_block.name=Four Chemistry Lazy Machine Block

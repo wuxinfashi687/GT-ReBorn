@@ -1,0 +1,88 @@
+{
+"versionName": "0.0.0.1",        
+"versionCode": 1,          
+"versionFormat": "%versionName%",  
+"sponsors": [{              
+"category": "gold",
+                "displayName": "sponsors.test",       
+"titleFormat": ["GOLD", "BOLD"],      
+"sponsorFormat": ["GOLD"],
+"sponsors": [{
+"name": "TCreopargh",
+"uuid": "2d06868c-6d9b-433a-a356-1a7993b62b8d"        
+},
+{
+"name": "Notch"
+},
+"Dinnerbone"       
+]
+},
+{
+"category": "diamond",
+"titleFormat": ["AQUA", "BOLD"],
+"sponsorFormat": ["AQUA"],
+"sponsors": [{
+"name": "Herobrine"
+}]
+}
+],
+"sponsorMessage": ["", {                       
+"text": "Thank all of you for sponsoring!",
+"color": "gold"
+}, {
+"text": "\n"
+}, {
+"text": "Become a sponsor!",
+"color": "red",
+"bold": true,
+"underlined": true,
+"clickEvent": {
+"action": "open_url",
+"value": "http://patreon.tcreopargh.xyz/"
+}
+}],
+"changelogs": {                  
+"1.2.0": [                      
+"Fixed some more bugs",               
+"Removed Herobrine",
+"Fixed the version number being too low"
+],
+"1.1.0": [                    
+"Fixed some bugs"                       
+]
+},
+"variables": {                  
+"testInt": 1000,
+"testString": "abcde",
+"testArray": [
+1,
+2,
+3
+],
+"testData": {
+"a": [
+"111",
+"222",
+"333"
+]
+}
+},
+"welcomeMessage": ["", {            
+"text": "Hello, welcome to play ",       
+"color": "gold"         
+}, {
+"text": "TestPack!",
+"color": "aqua"
+}, {
+"text": "\n"
+}, {
+"text": "Join our discord server!",
+"bold": true,          
+"underlined": true,          
+"color": "blue",           
+"clickEvent": {
+"action": "open_url",          
+"value": "https://discord.gg/WbrB4VaUsz"     
+}
+}]
+}
