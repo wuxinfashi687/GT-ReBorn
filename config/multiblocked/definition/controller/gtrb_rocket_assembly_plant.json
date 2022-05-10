@@ -1,0 +1,169 @@
+{
+  "consumeCatalyst": false,
+  "location": "gtrb:rocket_assembly_plant",
+  "traits": {},
+  "allowRotate": true,
+  "showInJei": true,
+  "baseRenderer": {
+    "baseTexture": "multiblocked:blocks/gregtech_base",
+    "frontTexture": "multiblocked:off",
+    "formedAsController": true,
+    "type": "gregtech"
+  },
+  "workingRenderer": {
+    "baseTexture": "multiblocked:blocks/gregtech_base",
+    "frontTexture": "multiblocked:on",
+    "formedAsController": true,
+    "type": "gregtech"
+  },
+  "isOpaqueCube": false,
+  "basePattern": {
+    "structureDir": [
+      "FRONT",
+      "UP",
+      "LEFT"
+    ],
+    "pattern": [
+      [
+        "AAA",
+        "AAA",
+        "AAA"
+      ],
+      [
+        "AAA",
+        "B C",
+        "ACC"
+      ],
+      [
+        "AAA",
+        "B C",
+        "ACC"
+      ],
+      [
+        "AAA",
+        "A A",
+        "AAA"
+      ],
+      [
+        "AAA",
+        "B A",
+        "AA "
+      ],
+      [
+        "AAA",
+        "B @",
+        "AA "
+      ],
+      [
+        "AAA",
+        "B A",
+        "AA "
+      ],
+      [
+        "AAA",
+        "AAA",
+        "AAA"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "gregtech:metal_casing",
+            "meta": 5
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "gtrb:rocket_assembly_plant",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "gregtech:meta_block_compressed_1875",
+            "meta": 11
+          }
+        ],
+        "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "gregtech:transparent_casing",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "D": {
+        "metaTileEntityId": "gregtech:item_bus.import.mv",
+        "type": "mte",
+        "io": "IN"
+      },
+      "E": {
+        "metaTileEntityId": "gregtech:item_bus.export.mv",
+        "type": "mte",
+        "io": "OUT"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A",
+        "D",
+        "E"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ]
+    }
+  },
+  "recipeMap": "empty"
+}

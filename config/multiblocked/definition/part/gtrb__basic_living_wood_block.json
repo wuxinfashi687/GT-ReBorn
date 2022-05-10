@@ -6,7 +6,7 @@
   "showInJei": true,
   "baseRenderer": {
     "baseTexture": "multiblocked:basic_mana_generator_base",
-    "frontTexture": "multiblocked:basic_mana_generator_base",
+    "frontTexture": "multiblocked:null",
     "type": "gregtech"
   },
   "isOpaqueCube": false

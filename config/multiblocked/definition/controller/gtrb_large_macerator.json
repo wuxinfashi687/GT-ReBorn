@@ -9,11 +9,13 @@
   "baseRenderer": {
     "baseTexture": "multiblocked:livingrock_base",
     "frontTexture": "multiblocked:off",
+    "formedAsController": true,
     "type": "gregtech"
   },
   "workingRenderer": {
     "baseTexture": "multiblocked:livingrock_base",
     "frontTexture": "multiblocked:on",
+    "formedAsController": true,
     "type": "gregtech"
   },
   "isOpaqueCube": false,

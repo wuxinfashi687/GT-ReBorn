@@ -11,3 +11,7 @@ basic_mana_input_bus.name=基础mana输入总线
 basic_mana_output_bus.name=基础mana输入仓
 basic_mana_item_output_bus.name=基础mana输出总线
 isomerization_platform.name=异构转化台
+exxonmobil_chemical_plant.name=埃克森美孚化工厂
+rocket_assembly_plant.name=火箭组装工厂
+mv_fluid_input_bus.name=流体输入仓
+mv_fluid_output_bus.name=流体输出仓

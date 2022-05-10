@@ -38,7 +38,7 @@
   "showInJei": true,
   "baseRenderer": {
     "baseTexture": "multiblocked:livingrock_base",
-    "frontTexture": "multiblocked:livingrock_base_inputbus",
+    "frontTexture": "multiblocked:gtrb_fluid_input",
     "formedAsController": true,
     "type": "gregtech"
   },
