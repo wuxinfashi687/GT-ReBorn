@@ -1,0 +1,46 @@
+{
+  "canShared": true,
+  "location": "gtrb:basic_mana_input_bus",
+  "traits": {
+    "background": "multiblocked:textures/livingrock_base_inputbus_gui.png",
+    "item": [
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "x": 71,
+        "y": 49,
+        "autoIO": true
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "x": 89,
+        "y": 49,
+        "autoIO": true
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "x": 71,
+        "y": 67,
+        "autoIO": true
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "x": 89,
+        "y": 67,
+        "autoIO": true
+      }
+    ]
+  },
+  "allowRotate": true,
+  "showInJei": true,
+  "baseRenderer": {
+    "baseTexture": "multiblocked:livingrock_base",
+    "frontTexture": "multiblocked:gtrb_fluid_input",
+    "formedAsController": true,
+    "type": "gregtech"
+  },
+  "isOpaqueCube": false
+}

@@ -1,0 +1,58 @@
+{
+  "name": "rocket_fuel_conduct",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "recipes": [
+    {
+      "uid": "rocket_fuel_conduct_1",
+      "duration": 60,
+      "inputs": {
+        "fluid": [
+          {
+            "content": "{FluidName:\"oxygen\",Amount:10}",
+            "chance": 1.0
+          },
+          {
+            "content": "{FluidName:\"dimethylhydrazine\",Amount:10}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "fluid": [
+          {
+            "content": "{FluidName:\"rocket_fuel\",Amount:30}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "rocket_fuel_conduct_2",
+      "duration": 60,
+      "inputs": {
+        "fluid": [
+          {
+            "content": "{FluidName:\"dimethylhydrazine\",Amount:10}",
+            "chance": 1.0
+          },
+          {
+            "content": "{FluidName:\"dinitrogen_tetroxide\",Amount:10}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "fluid": [
+          {
+            "content": "{FluidName:\"rocket_fuel\",Amount:60}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "consumeCatalyst": false,
+  "location": "gtrb:basic_mana_machine",
+  "traits": {
+    "background": "multiblocked:textures/mana_conduct_gui.png",
+    "item": [
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "x": 44,
+        "y": 53,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "x": 67,
+        "y": 53,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "x": 44,
+        "y": 75,
+        "autoIO": false
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "x": 67,
+        "y": 75,
+        "autoIO": false
+      }
+    ],
+    "fluid": [
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "x": 38,
+        "y": 97,
+        "autoIO": false,
+        "tC": 4000
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "x": 56,
+        "y": 97,
+        "autoIO": false,
+        "tC": 4000
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "x": 74,
+        "y": 97,
+        "autoIO": false,
+        "tC": 4000
+      },
+      {
+        "cIO": 1,
+        "gIO": 1,
+        "x": 111,
+        "y": 64,
+        "autoIO": true,
+        "tC": 4000
+      }
+    ]
+  },
+  "allowRotate": true,
+  "showInJei": true,
+  "baseRenderer": {
+    "baseTexture": "multiblocked:livingrock_base",
+    "frontTexture": "multiblocked:off",
+    "upTexture": "multiblocked:livingrock_top",
+    "type": "gregtech"
+  },
+  "workingRenderer": {
+    "baseTexture": "multiblocked:livingrock_base",
+    "frontTexture": "multiblocked:on",
+    "upTexture": "multiblocked:livingrock_top_work",
+    "type": "gregtech"
+  },
+  "isOpaqueCube": false,
+  "basePattern": {
+    "structureDir": [
+      "BACK",
+      "UP",
+      "RIGHT"
+    ],
+    "pattern": [
+      [
+        "@"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "controller": {
+        "location": "gtrb:basic_mana_machine",
+        "type": "component"
+      },
+      "air": {
+        "type": "air"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "-": [
+        "air"
+      ]
+    }
+  },
+  "recipeMap": "mana_conduct"
+}

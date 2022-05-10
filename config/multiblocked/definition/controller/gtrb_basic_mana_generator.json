@@ -1,0 +1,113 @@
+{
+  "catalyst": "{id:\"botania:obediencestick\",Count:1b,Damage:0s}",
+  "consumeCatalyst": false,
+  "location": "gtrb:basic_mana_generator",
+  "traits": {},
+  "allowRotate": true,
+  "showInJei": true,
+  "baseRenderer": {
+    "baseTexture": "multiblocked:basic_mana_generator_base",
+    "frontTexture": "multiblocked:off",
+    "formedAsController": true,
+    "type": "gregtech"
+  },
+  "workingRenderer": {
+    "baseTexture": "multiblocked:basic_mana_generator_base",
+    "frontTexture": "multiblocked:on",
+    "formedAsController": true,
+    "type": "gregtech"
+  },
+  "isOpaqueCube": false,
+  "basePattern": {
+    "structureDir": [
+      "FRONT",
+      "UP",
+      "LEFT"
+    ],
+    "pattern": [
+      [
+        "AAA",
+        "AAB",
+        "AAA",
+        "AAA"
+      ],
+      [
+        "AAA",
+        "D @",
+        "A A",
+        "AAA"
+      ],
+      [
+        "AAA",
+        "AAC",
+        "AAA",
+        "AAA"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "botania:livingwood",
+            "meta": 1
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "gtrb:basic_mana_generator",
+        "type": "component"
+      },
+      "B": {
+        "metaTileEntityId": "gregtech:energy_hatch.output.lv",
+        "type": "mte"
+      },
+      "C": {
+        "metaTileEntityId": "gregtech:fluid_hatch.import.lv",
+        "type": "mte"
+      },
+      "D": {
+        "metaTileEntityId": "gregtech:energy_hatch.output.lv",
+        "type": "mte"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ]
+    }
+  },
+  "recipeMap": "mana_generator"
+}
