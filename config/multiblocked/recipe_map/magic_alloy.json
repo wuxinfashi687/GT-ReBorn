@@ -136,6 +136,51 @@
       },
       "tickInputs": {},
       "tickOutputs": {}
+    },
+    {
+      "uid": "magic_alloy_4",
+      "duration": 100,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_dust\",Count:1b,Damage:32001s}"
+              ]
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "amount": 1,
+              "ore": "listAllfruit"
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"liquid_mana\",Amount:50}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 4,
+              "matches": [
+                "{id:\"minecraft:redstone\",Count:4b,Damage:0s}"
+              ]
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
     }
   ]
 }

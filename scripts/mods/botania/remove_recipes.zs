@@ -19,3 +19,4 @@ for i, item in botania_items {
 
 # 魔力池配方移除
 ManaInfusion.removeRecipe(<botania:quartz:1>);
+ManaInfusion.removeRecipe(<botania:manaresource>);

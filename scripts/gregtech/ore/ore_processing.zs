@@ -21,3 +21,8 @@ chemical_bath.recipeBuilder()
     .duration(100)
     .EUt(12)
     .buildAndRegister();
+
+//添加矿辞
+# 魔力钢转换
+<ore:ingotManasteel>.add(<gregtech:meta_ingot:30011>);
+<ore:blockMagicSteel>.add(<botania:storage>);

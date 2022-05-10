@@ -4,6 +4,7 @@ created by 2022.05.05
 */
 
 import mods.botania.Apothecary;
+import mods.botania.ManaInfusion;
 
 # 研究台
 Apothecary.addRecipe(<researchtable:table>, [
@@ -25,3 +26,15 @@ for i in 0 to 16 {
         [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>]
     ]);
 }
+
+# 魔力钢转换
+recipes.addShapeless(<gregtech:meta_block_compressed_1875:11>, [
+    <botania:storage>
+]);
+
+recipes.addShapeless(<botania:manaresource>, [
+    <gregtech:meta_ingot:30011>
+]);
+
+# 魔力钢
+ManaInfusion.addInfusion(<botania:manaresource>, <ore:dustSteel>, 5000);
