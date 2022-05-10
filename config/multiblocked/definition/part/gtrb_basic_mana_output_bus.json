@@ -42,7 +42,8 @@
   "showInJei": true,
   "baseRenderer": {
     "baseTexture": "multiblocked:livingrock_base",
-    "frontTexture": "multiblocked:livingrock_base_output",
+    "frontTexture": "multiblocked:gtrb_item_input",
+    "formedAsController": true,
     "type": "gregtech"
   },
   "isOpaqueCube": false

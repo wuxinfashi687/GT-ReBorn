@@ -19,11 +19,29 @@ var tc = ResearchTable.addCategory(
     <tconstruct:tooltables:3>, "匠魂学"
 );
 
-# 研究学科
+/// 研究学科
 // 植物学
+# 植物学基础
 ResearchTable.builder("basic_botania", botania_)
     .setIcons(<gtrb:basic_mana_machine>)
     .setTitle("基础植物学")
     .addCondition(<botania:livingrock>*8)
     .setRewardStages("basic_botania")
     .build();
+
+# 植物学自动控制理论
+ResearchTable.builder("botania_auto_control", botania_)
+    .setIcons(<gtrb:basic_mana_item_output_bus>)
+    .setTitle("基础魔法自动化理论")
+    .addCondition(<contenttweaker:red_tech_bottle>*64)
+    .setRewardStages("botania_auto_control")
+    .build();
+
+# 基础植魔自动化装置
+ResearchTable.builder("basic_botania_auto_machine", botania_)
+    .setIcons(<gtrb:large_macerator>)
+    .setTitle("基础植魔自动化装置")
+    .addCondition(<contenttweaker:red_tech_bottle>*128)
+    .setRewardStages("basic_botania_auto_machine")
+    .build();
+    

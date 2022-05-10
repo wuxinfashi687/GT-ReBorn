@@ -1,0 +1,13 @@
+{
+  "canShared": true,
+  "location": "gtrb:magic_steel_block",
+  "traits": {},
+  "allowRotate": true,
+  "showInJei": true,
+  "baseRenderer": {
+    "baseTexture": "multiblocked:magic_steel_base",
+    "frontTexture": "multiblocked:magic_steel_base",
+    "type": "gregtech"
+  },
+  "isOpaqueCube": false
+}

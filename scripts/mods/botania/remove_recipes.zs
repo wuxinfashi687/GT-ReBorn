@@ -4,6 +4,7 @@ created by 2022.05.01
 */
 
 import crafttweaker.item.IItemStack;
+import mods.botania.ManaInfusion;
 
 # 待移除的配方
 var botania_items as IItemStack[] = [
@@ -15,3 +16,7 @@ var botania_items as IItemStack[] = [
 for i, item in botania_items {
     recipes.remove(item);
 }
+
+# 魔力池配方移除
+ManaInfusion.removeRecipe(<botania:quartz:1>);
+ManaInfusion.removeRecipe(<botania:manaresource>);
