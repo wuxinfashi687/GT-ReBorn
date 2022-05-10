@@ -5,13 +5,13 @@
   "allowRotate": true,
   "showInJei": true,
   "baseRenderer": {
-    "baseTexture": "multiblocked:blocks/gregtech_base",
+    "baseTexture": "multiblocked:four_chemistry_lazy_machine",
     "frontTexture": "multiblocked:off",
     "formedAsController": true,
     "type": "gregtech"
   },
   "workingRenderer": {
-    "baseTexture": "multiblocked:blocks/gregtech_base",
+    "baseTexture": "multiblocked:four_chemistry_lazy_machine",
     "frontTexture": "multiblocked:on",
     "formedAsController": true,
     "type": "gregtech"
