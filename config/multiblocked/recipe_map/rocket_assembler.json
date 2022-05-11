@@ -1,0 +1,164 @@
+{
+  "name": "rocket_assembler",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "recipes": [
+    {
+      "uid": "rocket_assembler_1",
+      "duration": 1000,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 2,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:2b,Damage:130s}"
+              ]
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "amount": 2,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:2b,Damage:175s}"
+              ]
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "amount": 2,
+              "matches": [
+                "{id:\"gregtech:meta_plate\",Count:2b,Damage:30010s}"
+              ]
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "amount": 1,
+              "ore": "blockMagicSteel"
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "amount": 2,
+              "matches": [
+                "{id:\"advancedrocketry:ic\",Count:2b,Damage:3s}"
+              ]
+            },
+            "chance": 1.0
+          }
+        ],
+        "gtce_energy": [
+          {
+            "content": 856,
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"soldering_alloy\",Amount:288}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"advancedrocketry:rocketmotor\",Count:1b,Damage:0s}"
+              ]
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "rocket_assembler_2",
+      "duration": 1000,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 8,
+              "matches": [
+                "{id:\"tconstruct:firewood\",Count:8b,Damage:1s}"
+              ]
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_plate\",Count:1b,Damage:30010s}"
+              ]
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:1b,Damage:130s}"
+              ]
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "amount": 2,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:2b,Damage:175s}"
+              ]
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_item_1\",Count:1b,tag:{GT.PartStats:{Material:\"magnalium\"}},Damage:711s}"
+              ]
+            },
+            "chance": 1.0
+          }
+        ],
+        "gtce_energy": [
+          {
+            "content": 256,
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"soldering_alloy\",Amount:288}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"advancedrocketry:fueltank\",Count:1b,Damage:0s}"
+              ]
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "canShared": true,
+  "location": "gtrb:mv_item_output_bus",
+  "traits": {
+    "background": "multiblocked:textures/gtrb_base_input_bus_gui.png",
+    "item": [
+      {
+        "cIO": 1,
+        "gIO": 1,
+        "x": 59,
+        "y": 49,
+        "autoIO": true
+      },
+      {
+        "cIO": 1,
+        "gIO": 1,
+        "x": 77,
+        "y": 49,
+        "autoIO": true
+      },
+      {
+        "cIO": 1,
+        "gIO": 1,
+        "x": 95,
+        "y": 49,
+        "autoIO": true
+      },
+      {
+        "cIO": 1,
+        "gIO": 1,
+        "x": 59,
+        "y": 67,
+        "autoIO": true
+      },
+      {
+        "cIO": 1,
+        "gIO": 1,
+        "x": 77,
+        "y": 67,
+        "autoIO": true
+      },
+      {
+        "cIO": 1,
+        "gIO": 1,
+        "x": 95,
+        "y": 67,
+        "autoIO": true
+      },
+      {
+        "cIO": 1,
+        "gIO": 1,
+        "x": 59,
+        "y": 85,
+        "autoIO": true
+      },
+      {
+        "cIO": 1,
+        "gIO": 1,
+        "x": 77,
+        "y": 85,
+        "autoIO": true
+      },
+      {
+        "cIO": 1,
+        "gIO": 1,
+        "x": 95,
+        "y": 85,
+        "autoIO": true
+      }
+    ]
+  },
+  "allowRotate": true,
+  "showInJei": true,
+  "baseRenderer": {
+    "baseTexture": "multiblocked:blocks/gregtech_base",
+    "frontTexture": "multiblocked:gtrb_item_output",
+    "formedAsController": true,
+    "type": "gregtech"
+  },
+  "isOpaqueCube": false
+}

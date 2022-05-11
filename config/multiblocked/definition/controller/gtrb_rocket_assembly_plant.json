@@ -5,13 +5,13 @@
   "allowRotate": true,
   "showInJei": true,
   "baseRenderer": {
-    "baseTexture": "multiblocked:blocks/gregtech_base",
+    "baseTexture": "multiblocked:clean_stainless_machine",
     "frontTexture": "multiblocked:off",
     "formedAsController": true,
     "type": "gregtech"
   },
   "workingRenderer": {
-    "baseTexture": "multiblocked:blocks/gregtech_base",
+    "baseTexture": "multiblocked:clean_stainless_machine",
     "frontTexture": "multiblocked:on",
     "formedAsController": true,
     "type": "gregtech"
@@ -132,14 +132,44 @@
         "type": "states"
       },
       "D": {
-        "metaTileEntityId": "gregtech:item_bus.import.mv",
-        "type": "mte",
+        "blocks": [
+          {
+            "id": "gtrb:mv_fluid_input_bus"
+          }
+        ],
+        "type": "blocks",
+        "previewCount": 1,
         "io": "IN"
       },
       "E": {
-        "metaTileEntityId": "gregtech:item_bus.export.mv",
-        "type": "mte",
+        "blocks": [
+          {
+            "id": "gtrb:mv_item_input_bus"
+          }
+        ],
+        "type": "blocks",
+        "previewCount": 1,
+        "io": "IN"
+      },
+      "F": {
+        "blocks": [
+          {
+            "id": "gtrb:mv_item_output_bus"
+          }
+        ],
+        "type": "blocks",
+        "previewCount": 1,
         "io": "OUT"
+      },
+      "G": {
+        "blocks": [
+          {
+            "id": "gtrb:mv_energy_input_casing"
+          }
+        ],
+        "type": "blocks",
+        "previewCount": 1,
+        "io": "IN"
       },
       "any": {
         "type": "any"
@@ -155,7 +185,9 @@
       "A": [
         "A",
         "D",
-        "E"
+        "E",
+        "F",
+        "G"
       ],
       "B": [
         "B"
@@ -165,5 +197,5 @@
       ]
     }
   },
-  "recipeMap": "empty"
+  "recipeMap": "rocket_assembler"
 }

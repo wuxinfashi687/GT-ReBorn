@@ -17,3 +17,6 @@ exxonmobil_chemical_plant.name=埃克森美孚化工厂
 rocket_assembly_plant.name=火箭组装工厂
 mv_fluid_input_bus.name=流体输入仓
 mv_fluid_output_bus.name=流体输出仓
+mv_energy_input_casing.name=能量输入仓
+mv_item_input_bus.name=物品输入总线
+mv_item_output_bus.name=物品输出总线

@@ -17,3 +17,6 @@ exxonmobil_chemical_plant.name=Exxonmobil Chemical Plant
 rocket_assembly_plant.name=Rocket Assembly Plant
 mv_fluid_input_bus.name=Fluid Input Bus
 mv_fluid_output_bus.name=Fluid Output Bus
+mv_energy_input_casing.name=Energy Input Casing
+mv_item_input_bus.name=Item Input Bus
+mv_item_output_bus.name=Item Output Bus

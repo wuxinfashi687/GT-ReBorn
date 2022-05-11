@@ -145,6 +145,16 @@
         "previewCount": 1,
         "io": "OUT"
       },
+      "G": {
+        "blocks": [
+          {
+            "id": "gtrb:mv_energy_input_casing"
+          }
+        ],
+        "type": "blocks",
+        "previewCount": 1,
+        "io": "IN"
+      },
       "any": {
         "type": "any"
       }
@@ -159,7 +169,8 @@
       "A": [
         "A",
         "E",
-        "F"
+        "F",
+        "G"
       ],
       "B": [
         "B"
