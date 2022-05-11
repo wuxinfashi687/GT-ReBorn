@@ -1,0 +1,9 @@
+{
+	x: -9.0d,
+	y: -4.0d,
+	tasks: [{
+		uid: "ca2e3b22",
+		type: "checkmark",
+		title: "T1非矿物资源"
+	}]
+}

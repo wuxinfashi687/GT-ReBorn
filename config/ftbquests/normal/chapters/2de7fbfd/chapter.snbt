@@ -1,0 +1,7 @@
+{
+	title: "格雷科技:重生",
+	icon: "contenttweaker:red_tech_bottle",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

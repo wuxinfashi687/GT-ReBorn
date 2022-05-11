@@ -1,0 +1,12 @@
+{
+	x: 12.0d,
+	y: -2.0d,
+	dependencies: [
+		"d26327d3"
+	],
+	tasks: [{
+		uid: "9d02f79d",
+		type: "fluid",
+		fluid: "liquid_mana"
+	}]
+}

@@ -1,0 +1,16 @@
+{
+	title: "T3矿物",
+	x: -6.0d,
+	y: 6.0d,
+	dependencies: [
+		"4f1ca1a5",
+		"0dd24d90",
+		"3b4c28c8",
+		"19e38dd4"
+	],
+	tasks: [{
+		uid: "5dfdbd90",
+		type: "checkmark",
+		title: "T3矿物"
+	}]
+}

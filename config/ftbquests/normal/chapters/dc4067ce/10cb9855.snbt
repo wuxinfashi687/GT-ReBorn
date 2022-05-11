@@ -1,0 +1,29 @@
+{
+	x: 19.0d,
+	y: 0.0d,
+	dependencies: [
+		"15a6240a",
+		"11ca591e"
+	],
+	tasks: [{
+		uid: "10bb3069",
+		type: "item",
+		items: [{
+			item: "minecraft:iron_ingot"
+		}]
+	},
+	{
+		uid: "6bb1ecb4",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_ingot 1 25"
+		}]
+	},
+	{
+		uid: "14dfa056",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_ingot 1 112"
+		}]
+	}]
+}

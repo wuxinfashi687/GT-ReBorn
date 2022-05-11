@@ -1,0 +1,23 @@
+{
+	x: 0.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "52edccbb",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "listAllseed",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any listAllseed"
+				}
+			}
+		}],
+		count: 64L
+	}]
+}

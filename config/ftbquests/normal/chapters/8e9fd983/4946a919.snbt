@@ -1,0 +1,23 @@
+{
+	x: 2.5d,
+	y: 2.5d,
+	dependencies: [
+		"c65c9f53"
+	],
+	tasks: [{
+		uid: "a4689f6f",
+		type: "item",
+		items: [{
+			item: "botania:livingrock"
+		}],
+		count: 8L
+	},
+	{
+		uid: "1b74e2ec",
+		type: "item",
+		items: [{
+			item: "botania:livingwood"
+		}],
+		count: 8L
+	}]
+}

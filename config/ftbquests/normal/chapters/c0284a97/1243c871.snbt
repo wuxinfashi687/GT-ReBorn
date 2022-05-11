@@ -1,0 +1,9 @@
+{
+	title: "T1矿石",
+	x: -6.0d,
+	y: -4.0d,
+	tasks: [{
+		uid: "a305bd65",
+		type: "checkmark"
+	}]
+}

@@ -1,0 +1,31 @@
+{
+	x: 12.0d,
+	y: 2.0d,
+	dependencies: [
+		"e26d8a2a"
+	],
+	tasks: [{
+		uid: "fea26d8f",
+		type: "item",
+		items: [{
+			item: "gregtech:ore_black_ore_0"
+		}],
+		count: 64L
+	},
+	{
+		uid: "3ec64236",
+		type: "item",
+		items: [{
+			item: "gregtech:ore_yellow_ore_0"
+		}],
+		count: 64L
+	},
+	{
+		uid: "3b506928",
+		type: "item",
+		items: [{
+			item: "gregtech:ore_blue_ore_0"
+		}],
+		count: 64L
+	}]
+}

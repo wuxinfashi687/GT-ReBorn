@@ -1,0 +1,15 @@
+{
+	x: 5.0d,
+	y: 0.0d,
+	dependencies: [
+		"a22b18a9",
+		"a200ad6e"
+	],
+	tasks: [{
+		uid: "15fc8e83",
+		type: "item",
+		items: [{
+			item: "researchtable:table"
+		}]
+	}]
+}

@@ -13,7 +13,8 @@ var basic_botania_items as IItemStack[] = [
     <gtrb:basic_mana_machine>,
     <gtrb:basic_magic_alloy_furnace>,
     <gtrb:basic_mana_generator>,
-    <gtrb:centrifuge>
+    <gtrb:centrifuge>,
+    <gtrb:basic_magic_generator>
 ];
 
 for i, item in basic_botania_items {

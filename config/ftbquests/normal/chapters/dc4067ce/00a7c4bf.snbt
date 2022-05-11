@@ -1,0 +1,17 @@
+{
+	x: -2.5d,
+	y: 2.5d,
+	text: [
+		"或许你可以过一段时间，使用潘马斯的榨汁机制作？"
+	],
+	dependencies: [
+		"0d230acb"
+	],
+	tasks: [{
+		uid: "212b9551",
+		type: "item",
+		items: [{
+			item: "minecraft:paper"
+		}]
+	}]
+}

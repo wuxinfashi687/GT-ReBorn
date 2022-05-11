@@ -1,0 +1,42 @@
+{
+	x: 18.0d,
+	y: 2.0d,
+	dependencies: [
+		"3b2243de"
+	],
+	tasks: [{
+		uid: "960bfa70",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 1 271"
+		}]
+	},
+	{
+		uid: "b231702f",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 1 51"
+		}]
+	},
+	{
+		uid: "9aafee00",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 1 25"
+		}]
+	},
+	{
+		uid: "93d2362b",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_dust 1 112"
+		}]
+	},
+	{
+		uid: "d7738def",
+		type: "item",
+		items: [{
+			item: "minecraft:diamond"
+		}]
+	}]
+}
