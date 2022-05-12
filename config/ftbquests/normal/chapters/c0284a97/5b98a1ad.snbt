@@ -1,0 +1,15 @@
+{
+	x: -6.0d,
+	y: 1.0d,
+	dependencies: [
+		"db141f2c",
+		"8b3b7021",
+		"6a8bc72e",
+		"36d5a5aa"
+	],
+	tasks: [{
+		uid: "ffdc5c6c",
+		type: "checkmark",
+		title: "T2矿物"
+	}]
+}

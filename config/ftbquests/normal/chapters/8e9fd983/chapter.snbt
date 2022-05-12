@@ -1,0 +1,14 @@
+{
+	title: "植物魔法",
+	icon: {
+		id: "botania:lexicon",
+		tag: {
+			knowledge.minecraft: 1b,
+			knowledge.alfheim: 1b,
+			knowledge.relic: 1b
+		}
+	},
+	always_invisible: false,
+	group: 941346755,
+	default_quest_shape: ""
+}

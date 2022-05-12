@@ -6,6 +6,12 @@
       "uid": "rocket_fuel_conduct_1",
       "duration": 60,
       "inputs": {
+        "gtce_energy": [
+          {
+            "content": 356,
+            "chance": 1.0
+          }
+        ],
         "fluid": [
           {
             "content": "{FluidName:\"oxygen\",Amount:10}",
@@ -32,6 +38,12 @@
       "uid": "rocket_fuel_conduct_2",
       "duration": 60,
       "inputs": {
+        "gtce_energy": [
+          {
+            "content": 456,
+            "chance": 1.0
+          }
+        ],
         "fluid": [
           {
             "content": "{FluidName:\"dimethylhydrazine\",Amount:10}",

@@ -1,0 +1,25 @@
+{
+	x: 0.0d,
+	y: -2.0d,
+	dependencies: [
+		"37799f17"
+	],
+	tasks: [{
+		uid: "07af7318",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "listAllveggie",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any listAllveggie"
+				}
+			}
+		}]
+	}]
+}

@@ -1,0 +1,12 @@
+{
+	x: 7.5d,
+	y: 0.0d,
+	dependencies: [
+		"b15e924f"
+	],
+	tasks: [{
+		uid: "1f1e4b91",
+		type: "gamestage",
+		stage: "basic_botania"
+	}]
+}

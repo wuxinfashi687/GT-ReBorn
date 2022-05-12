@@ -1,0 +1,14 @@
+{
+	x: 0.0d,
+	y: 2.5d,
+	dependencies: [
+		"6bb1ecb4"
+	],
+	tasks: [{
+		uid: "2783d16e",
+		type: "item",
+		items: [{
+			item: "harvestcraft:presser"
+		}]
+	}]
+}

@@ -1,0 +1,7 @@
+{
+	title: "阶段三:MV阶段",
+	icon: "gregtech:machine 1 141",
+	always_invisible: false,
+	group: 787546046,
+	default_quest_shape: ""
+}

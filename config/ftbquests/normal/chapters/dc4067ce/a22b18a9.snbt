@@ -1,0 +1,42 @@
+{
+	x: 2.5d,
+	y: 0.0d,
+	dependencies: [
+		"8c562245"
+	],
+	tasks: [{
+		uid: "f211715c",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_tool_head_hammer 1 30004"
+		}]
+	},
+	{
+		uid: "a4143341",
+		type: "item",
+		items: [{
+			id: "gregtech:meta_tool",
+			tag: {
+				GT.ToolStats: {
+					Material: "magic_ore"
+				}
+			},
+			Damage: 8s
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "685c2ef6",
+		type: "item",
+		items: [{
+			id: "gregtech:meta_tool",
+			tag: {
+				GT.ToolStats: {
+					Material: "magic_ore"
+				}
+			},
+			Damage: 9s
+		}],
+		ignore_nbt: 1b
+	}]
+}

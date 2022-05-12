@@ -1,0 +1,14 @@
+{
+	x: 9.0d,
+	y: 2.0d,
+	dependencies: [
+		"d665002c"
+	],
+	tasks: [{
+		uid: "0fabd1af",
+		type: "item",
+		items: [{
+			item: "gtrb:centrifuge"
+		}]
+	}]
+}

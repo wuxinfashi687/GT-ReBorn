@@ -1,0 +1,7 @@
+{
+	title: "潘马斯农场",
+	icon: "harvestcraft:ploughmanslunchitem",
+	always_invisible: false,
+	group: 941346755,
+	default_quest_shape: ""
+}

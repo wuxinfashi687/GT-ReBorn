@@ -59,3 +59,18 @@ recipes.addShaped(<minecraft:torch>, [
     [null, <ore:stickWood>, null],
     [null, null, null]
 ]);
+
+# 植物球
+recipes.addShaped(<gregtech:meta_item_1:439>, [
+    [<ore:listAllveggie>, <ore:listAllveggie>, <ore:listAllveggie>],
+    [<ore:listAllveggie>, <ore:listAllveggie>, <ore:listAllveggie>],
+    [<ore:listAllveggie>, <ore:listAllveggie>, <ore:listAllveggie>]
+]);
+
+# 橡胶球
+furnace.addRecipe(<minecraft:slime_ball>, <gregtech:meta_item_1:439>, 1);
+
+# 肥料
+recipes.addShapeless(<gregtech:meta_item_1:1001>, 
+    [<minecraft:dirt>, <gregtech:meta_dust:1617>*1, <ore:sand>*1]
+);

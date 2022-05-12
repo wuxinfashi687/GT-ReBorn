@@ -1,0 +1,14 @@
+{
+	x: -1.0d,
+	y: 3.5d,
+	dependencies: [
+		"5b98a1ad"
+	],
+	tasks: [{
+		uid: "62803503",
+		type: "item",
+		items: [{
+			item: "gregtech:ore_orange_ore_0"
+		}]
+	}]
+}

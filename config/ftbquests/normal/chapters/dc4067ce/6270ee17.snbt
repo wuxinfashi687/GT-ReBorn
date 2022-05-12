@@ -1,0 +1,14 @@
+{
+	x: 10.0d,
+	y: 0.0d,
+	dependencies: [
+		"d665002c"
+	],
+	tasks: [{
+		uid: "06415def",
+		type: "item",
+		items: [{
+			item: "gtrb:basic_magic_alloy_furnace"
+		}]
+	}]
+}

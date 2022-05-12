@@ -1,0 +1,7 @@
+{
+	title: "重要资源分布",
+	icon: "gregtech:ore_darksteel_0",
+	always_invisible: false,
+	group: 770178045,
+	default_quest_shape: ""
+}

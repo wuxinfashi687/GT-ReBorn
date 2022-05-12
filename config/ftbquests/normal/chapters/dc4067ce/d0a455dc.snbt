@@ -1,0 +1,16 @@
+{
+	title: "我女朋友的本体",
+	x: 19.0d,
+	y: -3.5d,
+	dependencies: [
+		"e012b81e"
+	],
+	tasks: [{
+		uid: "a1251b03",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_plate 1 324"
+		}],
+		count: 114511L
+	}]
+}
