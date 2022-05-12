@@ -12,7 +12,12 @@ var ar_items as IItemStack[] = [
     <advancedrocketry:rocketmotor>,
     <advancedrocketry:ic:3>,
     <advancedrocketry:rocketbuilder>,
-    <advancedrocketry:fueltank>
+    <advancedrocketry:fueltank>,
+    <advancedrocketry:ic:5>,
+    <advancedrocketry:fuelingstation>,
+    <advancedrocketry:launchpad>,
+    <advancedrocketry:guidancecomputer>,
+    <advancedrocketry:structuretower>
 ];
 
 #循环移除
@@ -22,7 +27,9 @@ for i, item in ar_items {
 
 # 控制芯片
 var ar_items1 as IItemStack[] = [
-    <advancedrocketry:ic:3>
+    <advancedrocketry:ic:3>,
+    <advancedrocketry:ic:5>,
+    <advancedrocketry:ic:1>
 ];
 
 for i, item in ar_items1 {

@@ -1,0 +1,7 @@
+{
+	title: "阶段二:LV阶段",
+	icon: "gregtech:machine 1 245",
+	always_invisible: false,
+	group: 787546046,
+	default_quest_shape: ""
+}

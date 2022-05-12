@@ -22,6 +22,24 @@ chemical_bath.recipeBuilder()
     .EUt(12)
     .buildAndRegister();
 
+# 黑色矿粉出稀土
+chemical_bath.recipeBuilder()
+    .inputs(<gregtech:meta_dust:32001>*8)
+    .fluidInputs(<liquid:sodium_persulfate>*1000)
+    .outputs(<gregtech:meta_dust:1598>)
+    .duration(100)
+    .EUt(384)
+    .buildAndRegister();
+
+# 离心月面土
+centrifuge.recipeBuilder()
+    .inputs(<advancedrocketry:moonturf>)
+    .outputs(<gregtech:meta_dust:1598>)
+    .fluidOutputs(<liquid:helium_3>*144)
+    .duration(100)
+    .EUt(96)
+    .buildAndRegister();
+
 //添加矿辞
 # 魔力钢转换
 <ore:ingotManasteel>.add(<gregtech:meta_ingot:30011>);

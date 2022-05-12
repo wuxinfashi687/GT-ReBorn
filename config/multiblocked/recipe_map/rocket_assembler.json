@@ -81,6 +81,59 @@
       "tickOutputs": {}
     },
     {
+      "uid": "rocket_assembler_3",
+      "duration": 500,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:stone_polished\",Count:1b,Damage:5s}"
+              ]
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:meta_plate_dense\",Count:1b,Damage:324s}"
+              ]
+            },
+            "chance": 1.0
+          }
+        ],
+        "gtce_energy": [
+          {
+            "content": 600,
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"soldering_alloy\",Amount:288}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"advancedrocketry:launchpad\",Count:1b,Damage:0s}"
+              ]
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
       "uid": "rocket_assembler_2",
       "duration": 1000,
       "inputs": {
@@ -133,7 +186,7 @@
         ],
         "gtce_energy": [
           {
-            "content": 256,
+            "content": 856,
             "chance": 1.0
           }
         ],
@@ -151,6 +204,50 @@
               "amount": 1,
               "matches": [
                 "{id:\"advancedrocketry:fueltank\",Count:1b,Damage:0s}"
+              ]
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    },
+    {
+      "uid": "rocket_assembler_4",
+      "duration": 500,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 8,
+              "matches": [
+                "{id:\"gregtech:meta_stick\",Count:8b,Damage:323s}"
+              ]
+            },
+            "chance": 1.0
+          }
+        ],
+        "gtce_energy": [
+          {
+            "content": 656,
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"soldering_alloy\",Amount:288}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"advancedrocketry:structuretower\",Count:1b,Damage:0s}"
               ]
             },
             "chance": 1.0
