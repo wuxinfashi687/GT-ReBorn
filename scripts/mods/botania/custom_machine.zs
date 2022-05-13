@@ -79,3 +79,10 @@ recipes.addShaped(<gtrb:isomerization_platform>, [
     [<ore:plateMagicSteel>, <gtrb:basic_living_rock_block>, <ore:plateMagicSteel>],
     [<botania:managlass>, <ore:plateMagicOre>, <botania:managlass>]
 ]);
+
+# 自动凝矿工厂
+recipes.addShaped(<gtrb:automatic_condensation_plant>, [
+    [<ore:circuitHv>, <botania:rune:5>, <ore:circuitHv>],
+    [<ore:frameGtMagicSteel>, <gtrb:magic_steel_block>, <ore:frameGtMagicSteel>],
+    [<botania:spark>, <botania:rune:5>, <botania:spark>]
+]);
