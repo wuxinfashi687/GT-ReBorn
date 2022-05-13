@@ -21,4 +21,17 @@ create_custom_item("red_tech_bottle");
 # 蓝色科技瓶
 create_custom_item("blue_tech_bottle");
 
-#
+# 黄色科技瓶
+create_custom_item("yellow_tech_bottle");
+
+# 绿色科技瓶
+create_custom_item("green_tech_bottle");
+
+# 紫色科技瓶
+create_custom_item("purple_tech_bottle");
+
+# 橙色科技瓶
+create_custom_item("orange_tech_bottle");
+
+# 草绿色科技瓶
+create_custom_item("grass_tech_bottle");
