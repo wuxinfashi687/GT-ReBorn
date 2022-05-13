@@ -1,0 +1,184 @@
+{
+  "catalyst": "{id:\"botania:obediencestick\",Count:1b,Damage:0s}",
+  "consumeCatalyst": false,
+  "location": "gtrb:automatic_condensation_plant",
+  "traits": {},
+  "allowRotate": true,
+  "showInJei": true,
+  "baseRenderer": {
+    "baseTexture": "multiblocked:magic_steel_base",
+    "frontTexture": "multiblocked:off",
+    "formedAsController": true,
+    "type": "gregtech"
+  },
+  "workingRenderer": {
+    "baseTexture": "multiblocked:magic_steel_base",
+    "frontTexture": "multiblocked:on",
+    "formedAsController": true,
+    "type": "gregtech"
+  },
+  "isOpaqueCube": false,
+  "basePattern": {
+    "structureDir": [
+      "LEFT",
+      "UP",
+      "BACK"
+    ],
+    "pattern": [
+      [
+        "AAAA@AAA",
+        "BCCCCCCB",
+        "BCCCCCCB",
+        "AAAAAAAA"
+      ],
+      [
+        "AADDDDAA",
+        "B      B",
+        "B      B",
+        "AAAAAAAA"
+      ],
+      [
+        "AAEEEEAA",
+        "B FFFF B",
+        "B      B",
+        "AAAAAAAA"
+      ],
+      [
+        "AAAAAAAA",
+        "BBBBBBBB",
+        "BBBBBBBB",
+        "AAAAAAAA"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "gtrb:magic_steel_block",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "gtrb:automatic_condensation_plant",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "gregtech:metal_casing",
+            "meta": 5
+          }
+        ],
+        "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "gregtech:transparent_casing",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "botania:pool",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "E": {
+        "states": [
+          {
+            "id": "botania:altgrass",
+            "meta": 2
+          }
+        ],
+        "type": "states"
+      },
+      "F": {
+        "blocks": [
+          {
+            "id": "gtrb:mv_fluid_input_bus"
+          }
+        ],
+        "type": "blocks",
+        "previewCount": 1,
+        "io": "IN"
+      },
+      "G": {
+        "blocks": [
+          {
+            "id": "gtrb:mv_item_input_bus"
+          }
+        ],
+        "type": "blocks",
+        "previewCount": 1,
+        "io": "IN"
+      },
+      "H": {
+        "blocks": [
+          {
+            "id": "gtrb:mv_item_output_bus"
+          }
+        ],
+        "type": "blocks",
+        "previewCount": 1,
+        "io": "OUT"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A",
+        "F",
+        "G",
+        "H"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "E"
+      ],
+      "F": []
+    }
+  },
+  "recipeMap": "automatic_condensation"
+}

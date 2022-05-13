@@ -20,3 +20,5 @@ mv_fluid_output_bus.name=Fluid Output Bus
 mv_energy_input_casing.name=Energy Input Casing
 mv_item_input_bus.name=Item Input Bus
 mv_item_output_bus.name=Item Output Bus
+magic_steel_block.name=Magic Steel Casing
+automatic_condensation_plant.name=Automatic Condensation Plant
