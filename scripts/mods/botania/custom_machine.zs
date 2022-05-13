@@ -86,3 +86,10 @@ recipes.addShaped(<gtrb:automatic_condensation_plant>, [
     [<ore:frameGtMagicSteel>, <gtrb:magic_steel_block>, <ore:frameGtMagicSteel>],
     [<botania:spark>, <botania:rune:5>, <botania:spark>]
 ]);
+
+# 埃克森美孚化工厂
+recipes.addShaped(<gtrb:exxonmobil_chemical_plant>, [
+    [<ore:platePolytetrafluoroethylene>, <gregtech:meta_item_1:129>, <ore:platePolytetrafluoroethylene>],
+    [<gregtech:cable_single:41>, <gregtech:machine:988>, <gregtech:cable_single:41>],
+    [<gregtech:meta_item_1:174>, <gregtech:meta_item_1:129>, <gregtech:meta_item_1:174>]
+]);

@@ -37,7 +37,14 @@ recipes.addShapeless(<botania:manaresource>, [
 ]);
 
 # 魔力钢
-ManaInfusion.addInfusion(<botania:manaresource>, <ore:dustSteel>, 5000);
+ManaInfusion.addInfusion(<gregtech:meta_dust:30011>, <ore:dustSteel>, 5000);
+electric_blast_furnace.recipeBuilder()
+    .inputs(<ore:dustMagicSteel>)
+    .outputs(<gregtech:meta_ingot:30011>)
+    .property("temperature", 1200)
+    .duration(300)
+    .EUt(64)
+    .buildAndRegister();
 
 # 魔力钢机械方块
 recipes.addShaped(<gtrb:magic_steel_block>, [
@@ -45,3 +52,5 @@ recipes.addShaped(<gtrb:magic_steel_block>, [
     [<ore:plateMagicSteel>, <gregtech:meta_tool:8>, <ore:plateMagicSteel>],
     [<ore:plateMagicSteel>, <ore:plateMagicSteel>, <ore:plateMagicSteel>]
 ]);
+
+# 

@@ -74,3 +74,38 @@ furnace.addRecipe(<minecraft:slime_ball>, <gregtech:meta_item_1:439>, 1);
 recipes.addShapeless(<gregtech:meta_item_1:1001>, 
     [<minecraft:dirt>, <gregtech:meta_dust:1617>*1, <ore:sand>*1]
 );
+
+# 流体输入仓
+recipes.addShaped(<gtrb:mv_fluid_input_bus>, [
+    [null, <gregtech:machine_casing:1>, null],
+    [null, <ore:blockGlass>, null],
+    [null, null, null]
+]);
+
+# 流体输出仓
+recipes.addShaped(<gtrb:mv_fluid_output_bus>, [
+    [null, <ore:blockGlass>, null],
+    [null, <gregtech:machine_casing:1>, null],
+    [null, null, null]
+]);
+
+# 物品输入总线
+recipes.addShaped(<gtrb:mv_item_input_bus>, [
+    [null, <gregtech:machine_casing:1>, null],
+    [null, <ironchest:iron_chest>, null],
+    [null, null, null]
+]);
+
+# 物品输出总线
+recipes.addShaped(<gtrb:mv_item_output_bus>, [
+    [null, <ironchest:iron_chest>, null],
+    [null, <gregtech:machine_casing:1>, null],
+    [null, null, null]
+]);
+
+# 能量输入仓
+recipes.addShaped(<gtrb:mv_energy_input_casing>, [
+    [null, <gregtech:machine_casing:1>, null],
+    [null, <gregtech:meta_item_1:717>, null],
+    [null, null, null]
+]);
