@@ -1,0 +1,71 @@
+{
+  "name": "automatic_condensation",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "recipes": [
+    {
+      "uid": "automatic_condensation_1",
+      "duration": 100,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"botania:livingrock\",Count:1b,Damage:0s}"
+              ]
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"botania:specialflower\",Count:1b,tag:{type:\"orechid\"},Damage:0s}"
+              ]
+            },
+            "chance": 0.001
+          }
+        ],
+        "fluid": [
+          {
+            "content": "{FluidName:\"liquid_mana\",Amount:144}",
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:ore_black_ore_0\",Count:1b,Damage:0s}"
+              ]
+            },
+            "chance": 0.333
+          },
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:ore_yellow_ore_0\",Count:1b,Damage:0s}"
+              ]
+            },
+            "chance": 0.333
+          },
+          {
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"gregtech:ore_blue_ore_0\",Count:1b,Damage:0s}"
+              ]
+            },
+            "chance": 0.333
+          }
+        ]
+      },
+      "tickInputs": {},
+      "tickOutputs": {}
+    }
+  ]
+}

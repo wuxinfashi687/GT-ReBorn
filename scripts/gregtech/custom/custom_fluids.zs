@@ -13,7 +13,7 @@ import mods.gregtech.material.MaterialRegistry;
 
 # 液态Mana
 MaterialBuilder(32500, "liquid_mana")
-    .fluid(FluidTypes.LIQUID, false)
+    .fluid(FluidTypes.LIQUID, true)
     .fluidTemp(300)
     .color(0x00BFFF)
     .build();

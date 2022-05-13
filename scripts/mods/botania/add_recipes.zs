@@ -38,3 +38,10 @@ recipes.addShapeless(<botania:manaresource>, [
 
 # 魔力钢
 ManaInfusion.addInfusion(<botania:manaresource>, <ore:dustSteel>, 5000);
+
+# 魔力钢机械方块
+recipes.addShaped(<gtrb:magic_steel_block>, [
+    [<ore:plateMagicSteel>, <ore:plateMagicSteel>, <ore:plateMagicSteel>],
+    [<ore:plateMagicSteel>, <gregtech:meta_tool:8>, <ore:plateMagicSteel>],
+    [<ore:plateMagicSteel>, <ore:plateMagicSteel>, <ore:plateMagicSteel>]
+]);

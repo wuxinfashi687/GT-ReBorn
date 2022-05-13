@@ -6,7 +6,8 @@
   "showInJei": true,
   "baseRenderer": {
     "baseTexture": "multiblocked:magic_steel_base",
-    "frontTexture": "multiblocked:magic_steel_base",
+    "frontTexture": "multiblocked:null",
+    "formedAsController": true,
     "type": "gregtech"
   },
   "isOpaqueCube": false

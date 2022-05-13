@@ -26,7 +26,7 @@
       "outputs": {
         "fluid": [
           {
-            "content": "{FluidName:\"rocket_fuel\",Amount:30}",
+            "content": "{FluidName:\"rocket_fuel\",Amount:10}",
             "chance": 1.0
           }
         ]
@@ -58,7 +58,7 @@
       "outputs": {
         "fluid": [
           {
-            "content": "{FluidName:\"rocket_fuel\",Amount:60}",
+            "content": "{FluidName:\"rocket_fuel\",Amount:20}",
             "chance": 1.0
           }
         ]
