@@ -109,3 +109,10 @@ recipes.addShaped(<gtrb:mv_energy_input_casing>, [
     [null, <gregtech:meta_item_1:717>, null],
     [null, null, null]
 ]);
+
+# 蓝色物质粉
+recipes.addShaped(<gregtech:meta_dust:32003>, [
+    [null, <ore:ingotBlueOre>, null],
+    [null, <gregtech:meta_tool:12>, null],
+    [null, null, null]
+]);
