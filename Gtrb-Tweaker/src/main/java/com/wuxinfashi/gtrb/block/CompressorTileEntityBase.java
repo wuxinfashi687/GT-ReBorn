@@ -1,8 +1,7 @@
 package com.wuxinfashi.gtrb.block;
 
 import com.wuxinfashi.gtrb.Gtrb;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
+import com.wuxinfashi.gtrb.recipe.RecipeCompressor;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -16,12 +15,14 @@ import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
+import java.util.ArrayList;
 
 public class CompressorTileEntityBase extends TileEntity implements ITickable
 {
     public String ID;
     public String name;
     private int process = 0;
+    public static ArrayList<RecipeCompressor> recipes = new ArrayList<>();
     private final ItemStackHandler up = new ItemStackHandler(1)
     {
         @Override
@@ -97,47 +98,51 @@ public class CompressorTileEntityBase extends TileEntity implements ITickable
 
     @Override
     public void update() {
-        Item dirt = Item.getItemFromBlock(Blocks.DIRT);
-        boolean canExtractInput = dirt.equals(this.side.extractItem(0, 1, true).getItem());
-        if (canExtractInput)
+        for (RecipeCompressor recipe : recipes)
         {
-            Item item = Items.DIAMOND;
-            boolean isNotConsume = item.equals(this.up.extractItem(0, 1, true).getItem());
-            if (isNotConsume)
+            Item input = recipe.getInput();
+            boolean canExtractInput = input.equals(this.side.extractItem(0, 1, true).getItem());
+            if (canExtractInput)
             {
-                boolean canInsertOutput = this.down
-                        .insertItem(0, new ItemStack(
-                                Item.getItemFromBlock(Blocks.DIAMOND_BLOCK), 1, 0
-                        ), true)
-                        .isEmpty();
-                if (canInsertOutput)
+                Item notConsume = recipe.getNotConsume();
+                boolean isNotConsume = notConsume.equals(this.up.extractItem(0, 1, true).getItem());
+                if (isNotConsume)
                 {
-                    int num = this.side.getStackInSlot(0).getCount();
-                    this.side.extractItem(0, num, false);
-                    this.process += num;
-                    if (this.getProcess() >= 64)
+                    boolean canInsertOutput = this.down
+                            .insertItem(0, new ItemStack(
+                                    recipe.getOutput(), 1, 0
+                            ), true)
+                            .isEmpty();
+                    if (canInsertOutput)
                     {
-                        this.down.insertItem(
-                                0, new ItemStack(
-                                        Item.getItemFromBlock(Blocks.DIAMOND_BLOCK), 1, 0
-                                ), false
-                        );
-                        this.process = 0;
+                        int num = this.side.getStackInSlot(0).getCount();
+                        this.side.extractItem(0, num, false);
+                        this.process += num;
+                        if (this.getProcess() >= recipe.getAmount())
+                        {
+                            int out = (recipe.getAmount() >= 64) ? 1:(64/recipe.getAmount());
+                            this.down.insertItem(
+                                    0, new ItemStack(
+                                            recipe.getOutput(), out, 0
+                                    ), false
+                            );
+                            this.process -= recipe.getAmount();
+                        }
+                        break;
                     }
-                    this.markDirty();
                 }
             }
-            else {
-                this.markDirty();
-            }
         }
-        else {
-            this.markDirty();
-        }
+        this.markDirty();
     }
 
     public int getProcess()
     {
         return this.process;
+    }
+
+    public static void addRecipe(RecipeCompressor recipe)
+    {
+        recipes.add(recipe);
     }
 }
