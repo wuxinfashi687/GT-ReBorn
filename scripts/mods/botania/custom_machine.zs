@@ -13,7 +13,7 @@ recipes.addShaped(<gtrb:basic_mana_machine>, [
 # 基础魔法发电机
 recipes.addShaped(<gtrb:basic_magic_generator>, [
     [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>],
-    [<gregtech:meta_item_1:717>, <ore:frameGtMagicOre>, <gregtech:meta_item_1:717>],
+    [<libvulpes:coil0:4>, <ore:frameGtMagicOre>, <libvulpes:coil0:4>],
     [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>]
 ]);
 

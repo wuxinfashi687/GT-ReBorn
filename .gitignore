@@ -14,3 +14,21 @@
 /journeymap
 /backups
 /natives-windows-x86_64
+/Gtrb-Tweaker/out
+/Gtrb-Tweaker/*.ipr
+/Gtrb-Tweaker/*.iws
+/Gtrb-Tweaker/*.iml
+/Gtrb-Tweaker/.idea
+/Gtrb-Tweaker/gradle/
+/Gtrb-Tweaker/run
+/Gtrb-Tweaker/build
+/Gtrb-Tweaker/.gradle
+/Gtrb-Tweaker/gradle
+/Gtrb-Tweaker/.gitignore
+/Gtrb-Tweaker/gradle.properties
+/Gtrb-Tweaker/gradle.bat
+/Gtrb-Tweaker/LICENSE.txt
+/Gtrb-Tweaker/LICENSE-Paulscode IBXM Library.txt
+/Gtrb-Tweaker/LICENSE-Paulscode SoundSystem CodecIBXM.txt
+/Gtrb-Tweaker/README.txt
+/Gtrb-Tweaker/CREDITS.txt
