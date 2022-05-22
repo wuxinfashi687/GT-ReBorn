@@ -1,6 +1,5 @@
 package com.wuxinfashi.gtrb.recipe;
 
-import crafttweaker.api.item.IItemStack;
 import net.minecraft.item.Item;
 
 public class RecipeCompressor
@@ -16,6 +15,14 @@ public class RecipeCompressor
         this.amount = amounts;
         this.output = outputs;
         this.notConsume = notConsumes;
+    }
+
+    public RecipeCompressor()
+    {
+        this.input = null;
+        this.amount = 0;
+        this.output = null;
+        this.notConsume = null;
     }
 
     public Item getInput() {

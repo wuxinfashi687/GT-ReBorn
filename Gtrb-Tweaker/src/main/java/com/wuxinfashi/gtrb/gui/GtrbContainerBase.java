@@ -82,11 +82,10 @@ public class GtrbContainerBase extends Container {
         {
             CompressorTileEntityBase compressor = (CompressorTileEntityBase) tileEntity;
             int processing = compressor.getProcess();
-            int recipe_max = compressor.getRecipe_max();
-            if (recipe_max != this.recipe_max)
+            int recipe_max = compressor.getRecipeCompressor().getAmount();
+            if (recipe_max != this.recipe_max && this.process == 0)
             {
                 this.recipe_max = recipe_max;
-                this.process = 0;
                 for (IContainerListener listener : this.listeners)
                 {
                     listener.sendWindowProperty(this, 1, recipe_max);
