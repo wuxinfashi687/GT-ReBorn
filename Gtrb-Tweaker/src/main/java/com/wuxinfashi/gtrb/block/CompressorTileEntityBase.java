@@ -23,6 +23,7 @@ public class CompressorTileEntityBase extends TileEntity implements ITickable
     public String name;
     private int process = 0;
     public static ArrayList<RecipeCompressor> recipes = new ArrayList<>();
+    private int recipe_max = 0;
     private final ItemStackHandler up = new ItemStackHandler(1)
     {
         @Override
@@ -118,15 +119,16 @@ public class CompressorTileEntityBase extends TileEntity implements ITickable
                         int num = this.side.getStackInSlot(0).getCount();
                         this.side.extractItem(0, num, false);
                         this.process += num;
-                        if (this.getProcess() >= recipe.getAmount())
+                        this.recipe_max = recipe.getAmount();
+                        if (this.process >= recipe.getAmount())
                         {
-                            int out = (recipe.getAmount() >= 64) ? 1:(64/recipe.getAmount());
+                            int out = (recipe.getAmount() >= 64)?1 : (this.process/recipe.getAmount());
                             this.down.insertItem(
                                     0, new ItemStack(
                                             recipe.getOutput(), out, 0
                                     ), false
                             );
-                            this.process -= recipe.getAmount();
+                            this.process -= (recipe.getAmount() * out);
                         }
                         break;
                     }
@@ -144,5 +146,10 @@ public class CompressorTileEntityBase extends TileEntity implements ITickable
     public static void addRecipe(RecipeCompressor recipe)
     {
         recipes.add(recipe);
+    }
+
+    public int getRecipe_max()
+    {
+        return this.recipe_max;
     }
 }

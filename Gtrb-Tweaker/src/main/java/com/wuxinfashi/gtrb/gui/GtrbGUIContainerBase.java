@@ -50,7 +50,13 @@ public class GtrbGUIContainerBase extends GuiContainer
     @Override
     protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY)
     {
-        String text = I18n.format("tile.gtrb.test_machine.name");
-        this.drawCenteredString(this.fontRenderer, text, this.xSize / 2, 6, 0x00404040);
+        String name = I18n.format("tile.gtrb.test_machine.name");
+        GtrbContainerBase container = (GtrbContainerBase) this.inventorySlots;
+        int process = container.getProcess();
+        int max_recipe = container.getRecipe_max();
+        String process_display = I18n.format("text.gtrb.test_machine.process.name") +
+                ":" + process + "/" + max_recipe;
+        this.drawCenteredString(this.fontRenderer, name, this.xSize / 2, 6, 0x00404040);
+        this.drawCenteredString(this.fontRenderer, process_display, this.xSize / 2, 18, 0x00404040);
     }
 }
