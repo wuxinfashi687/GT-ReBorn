@@ -1,8 +1,10 @@
 package com.wuxinfashi.gtrb.gui;
 
+import com.wuxinfashi.gtrb.block.CompressorTileEntityBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
+import net.minecraft.inventory.IContainerListener;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
@@ -10,6 +12,8 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.common.capabilities.Capability;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.SlotItemHandler;
@@ -21,6 +25,8 @@ public class GtrbContainerBase extends Container {
     private final IItemHandler down;
     private final IItemHandler side;
     private InventoryPlayer player;
+    private int process = 0;
+    private int recipe_max = 0;
 
     public GtrbContainerBase(
             EntityPlayer player, World world,
@@ -65,5 +71,61 @@ public class GtrbContainerBase extends Container {
             this.addSlotToContainer(new Slot(this.player, i+18, 8+18*i, 112));
             this.addSlotToContainer(new Slot(this.player, i+27, 8+18*i, 130));
         }
+    }
+
+    @Override
+    public void detectAndSendChanges()
+    {
+        super.detectAndSendChanges();
+        TileEntity tileEntity = this.world.getTileEntity(this.pos);
+        if (tileEntity instanceof CompressorTileEntityBase)
+        {
+            CompressorTileEntityBase compressor = (CompressorTileEntityBase) tileEntity;
+            int processing = compressor.getProcess();
+            int recipe_max = compressor.getRecipeCompressor().getAmount();
+            if (recipe_max != this.recipe_max && this.process == 0)
+            {
+                this.recipe_max = recipe_max;
+                for (IContainerListener listener : this.listeners)
+                {
+                    listener.sendWindowProperty(this, 1, recipe_max);
+                    listener.sendWindowProperty(this, 0, 0);
+                }
+            }
+            else {
+                if (processing != this.process)
+                {
+                    this.process = processing;
+                    for (IContainerListener listener : this.listeners)
+                    {
+                        listener.sendWindowProperty(this, 0, processing);
+                    }
+                }
+            }
+        }
+    }
+
+    @Override
+    @SideOnly(Side.CLIENT)
+    public void updateProgressBar(int id, int data)
+    {
+        if (id == 0)
+        {
+            this.process = data;
+        }
+        else if (id == 1)
+        {
+            this.recipe_max = data;
+        }
+    }
+
+    public int getProcess()
+    {
+        return this.process;
+    }
+
+    public int getRecipe_max()
+    {
+        return this.recipe_max;
     }
 }

@@ -3,3 +3,4 @@ item.gtrb.red_tech_bottle.name=Red Tech Bottle
 item.gtrb.blue_tech_bottle.name=Blue Tech Bottle
 item.gtrb.yellow_tech_bottle.name=Yellow Tech Bottle
 tile.gtrb.test_machine.name=Test Machine
+text.gtrb.test_machine.process.name=Process
