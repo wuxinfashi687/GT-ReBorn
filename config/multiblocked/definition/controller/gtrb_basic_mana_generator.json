@@ -1,5 +1,4 @@
 {
-  "catalyst": "{id:\"botania:obediencestick\",Count:1b,Damage:0s}",
   "consumeCatalyst": false,
   "location": "gtrb:basic_mana_generator",
   "traits": {},
@@ -20,27 +19,27 @@
   "isOpaqueCube": false,
   "basePattern": {
     "structureDir": [
-      "FRONT",
+      "BACK",
       "UP",
-      "LEFT"
+      "RIGHT"
     ],
     "pattern": [
       [
         "AAA",
-        "AAB",
-        "AAA",
+        "BBB",
+        "BBB",
+        "AAA"
+      ],
+      [
+        "@AA",
+        "B B",
+        "B B",
         "AAA"
       ],
       [
         "AAA",
-        "D @",
-        "A A",
-        "AAA"
-      ],
-      [
-        "AAA",
-        "AAC",
-        "AAA",
+        "BBB",
+        "BBB",
         "AAA"
       ]
     ],
@@ -62,8 +61,8 @@
       "A": {
         "states": [
           {
-            "id": "botania:livingwood",
-            "meta": 1
+            "id": "gtrb:basic_living_wood_block",
+            "meta": 0
           }
         ],
         "type": "states"
@@ -73,16 +72,31 @@
         "type": "component"
       },
       "B": {
-        "metaTileEntityId": "gregtech:energy_hatch.output.lv",
-        "type": "mte"
+        "states": [
+          {
+            "id": "gregtech:wire_coil",
+            "meta": 0
+          }
+        ],
+        "type": "states"
       },
       "C": {
-        "metaTileEntityId": "gregtech:fluid_hatch.import.lv",
-        "type": "mte"
+        "blocks": [
+          {
+            "id": "gtrb:mv_fluid_input_bus"
+          }
+        ],
+        "type": "blocks",
+        "io": "IN"
       },
       "D": {
-        "metaTileEntityId": "gregtech:energy_hatch.output.lv",
-        "type": "mte"
+        "blocks": [
+          {
+            "id": "gtrb:mv_item_input_bus"
+          }
+        ],
+        "type": "blocks",
+        "io": "IN"
       },
       "any": {
         "type": "any"
@@ -96,18 +110,14 @@
         "any"
       ],
       "A": [
-        "A"
+        "A",
+        "C",
+        "D"
       ],
       "B": [
         "B"
-      ],
-      "C": [
-        "C"
-      ],
-      "D": [
-        "D"
       ]
     }
   },
-  "recipeMap": "mana_generator"
+  "recipeMap": "empty"
 }
