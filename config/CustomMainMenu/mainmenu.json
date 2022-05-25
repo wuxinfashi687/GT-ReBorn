@@ -1,0 +1,144 @@
+{
+    "other": {
+        "background": {
+            "image": "mainmenu:background.png",
+            "mode": "fill"
+        }
+    },
+    "labels": {
+        "mjstate": {
+            "text": "Copyright Mojang AB. Do not distribute!",
+            "posX": 10,
+            "posY": -15,
+            "color": -1,
+            "alignment": "bottom_left"
+        },
+        "authors": {
+            "text": "作者: wuxinfashi",
+            "posX": 10,
+            "posY": -25,
+            "color": -1,
+            "alignment": "bottom_left"
+        },
+        "packageinfo": {
+            "text": "MC版本:#mcversion# #modsloaded#模组已加载/#modsactive#模组已激活",
+            "posX": 10,
+            "posY": -35,
+            "color": -1,
+            "hoverText": "该版本为aphla版本,请勿发给他人!",
+            "hoverColor": 4023043,
+            "alignment": "bottom_left"
+        }
+    },
+    "images": {
+        "single_game": {
+            "image": "mainmenu:gtrb.png",
+            "posX": -38,
+            "posY": 30,
+            "width": 80,
+            "height": 40,
+            "alignment": "top_center",
+            "hoverImage": "mainmenu:gtrb_hover.png"
+        }
+    },
+    "buttons":
+    {
+        "singleplayer":
+        {
+            "text" : "menu.singleplayer",
+            "posX" : -100,
+            "posY" : 28,
+            "width" : 200,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            }
+        },
+        
+        "multiplayer":
+        {
+            "text" : "menu.multiplayer",
+            "posX" : -100,
+            "posY" : 52,
+            "width" : 200,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "multiplayer"
+            }
+        },
+        
+        "mods":
+        {
+            "text" : "fml.menu.mods",
+            "posX" : -100,
+            "posY" : 76,
+            "width" : 200,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            }
+        },
+            
+        "options":
+        {
+            "text" : "menu.options",
+            "posX" : -100,
+            "posY" : 112,
+            "width" : 98,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "options"
+            }
+        },
+        
+        "quit":
+        {
+            "text" : "menu.quit",
+            "posX" : 2,
+            "posY" : 112,
+            "width" : 98,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "quit"
+            }
+        },
+        
+        "language":
+        {
+            "text" : "",
+            "posX" : -124,
+            "posY" : 112,
+            "width" : 20,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "languages"
+            }
+        },
+        
+        "refresh":
+        {
+            "text" : "",
+            "posX" : -154,
+            "posY" : 112,
+            "width" : 20,
+            "height" : 20,
+            "texture" : "custommainmenu:textures/gui/buttons.png",
+            "action" : 
+            {
+                "type" : "openLink",
+                "link" : "https://github.com/wuxinfashi687/GT-ReBorn"
+            }
+        }
+    }
+}

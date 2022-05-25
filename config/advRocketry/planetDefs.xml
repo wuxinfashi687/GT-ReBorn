@@ -18,7 +18,7 @@
             <generateVolcanos>false</generateVolcanos>
             <generateStructures>false</generateStructures>
             <generateGeodes>false</generateGeodes>
-            <planet DIMID="2" name="Luna">
+            <planet DIMID="3" name="Luna">
                 <isKnown>true</isKnown>
                 <fogColor>1.0,1.0,1.0</fogColor>
                 <skyColor>1.0,1.0,1.0</skyColor>
@@ -37,7 +37,7 @@
                 <generateGeodes>false</generateGeodes>
                 <biomeIds>advancedrocketry:moon;30,advancedrocketry:moondark;30</biomeIds>
             </planet>
-            <planet DIMID="3" name="test">
+            <planet DIMID="4" name="test">
             <isKnown>true</isKnown>
             <fogColor>1.0,1.0,1.0</fogColor>
             <skyColor>1.0,1.0,1.0</skyColor>
