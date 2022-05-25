@@ -33,7 +33,7 @@ ResearchTable.builder("basic_botania", botania_)
 ResearchTable.builder("botania_auto_control", botania_)
     .setIcons(<gtrb:basic_mana_item_output_bus>)
     .setTitle("基础魔法自动化理论")
-    .addCondition(<contenttweaker:red_tech_bottle>*64)
+    .addCondition(<gtrb:red_tech_bottle>*64)
     .setRewardStages("botania_auto_control")
     .build();
 
@@ -41,7 +41,7 @@ ResearchTable.builder("botania_auto_control", botania_)
 ResearchTable.builder("basic_botania_auto_machine", botania_)
     .setIcons(<gtrb:large_macerator>)
     .setTitle("基础植魔自动化装置")
-    .addCondition(<contenttweaker:red_tech_bottle>*128)
+    .addCondition(<gtrb:red_tech_bottle>*128)
     .setRewardStages("basic_botania_auto_machine")
     .build();
     

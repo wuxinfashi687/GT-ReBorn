@@ -52,15 +52,17 @@
             <str>{yellow}当前所在维度: </str>
             <operation>
                 <str>EQ</str>
-                <var>dimension</var>
-                    <str>overworld</str>
-                    <str>the_nether</str>
-                    <str>the_end</str>
-                    <str>moon.moon</str>
+                <var>dimensionid</var>
+                    <num>0</num>
+                    <num>-1</num>
+                    <num>1</num>
+                    <num>3</num>
+                    <num>-2</num>
                         <str>{white}主世界</str>
                         <str>{white}地狱</str>
                         <str>{white}末地</str>
                         <str>{white}月球</str>
+                        <str>{white}太空</str>
             </operation>
         </line>
         <line>
