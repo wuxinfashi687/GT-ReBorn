@@ -5,6 +5,7 @@ created by 2022.05.10
 
 import mods.gregtech.recipe.RecipeMap;
 
+# 火箭防护板
 assembler.recipeBuilder()
     .inputs([
         <ore:plateDenseSteel>*4, <ore:plateDenseStainlessSteel>*4,

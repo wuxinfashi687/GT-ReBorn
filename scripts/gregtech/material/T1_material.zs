@@ -116,3 +116,10 @@ recipes.addShaped(<gregtech:meta_dust:32003>, [
     [null, <gregtech:meta_tool:12>, null],
     [null, null, null]
 ]);
+
+# 通量核心
+recipes.addShaped(<fluxnetworks:fluxcore>, [
+    [<fluxnetworks:flux>, <gregification:gf_meta_item:4>, <fluxnetworks:flux>],
+    [<minecraft:obsidian>, <minecraft:ender_eye>, <minecraft:obsidian>],
+    [<fluxnetworks:flux>, <gregification:gf_meta_item:4>, <fluxnetworks:flux>]
+]);
