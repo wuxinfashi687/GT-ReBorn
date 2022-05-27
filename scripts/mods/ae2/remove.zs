@@ -14,3 +14,12 @@ var ae2_items as IItemStack[] = [
 for i, item in ae2_items {
     recipes.remove(item);
 }
+
+# 待移除的配方
+var ae2_items2 as IItemStack[] = [
+    <threng:material>
+];
+
+for i, item in ae2_items2 {
+    furnace.remove(item);
+}

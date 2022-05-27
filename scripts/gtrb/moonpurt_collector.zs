@@ -31,9 +31,11 @@ ebf.recipeMap.start()
 ebf.setupRecipe = function(recipeLogic as RecipeLogic, recipe as Recipe) as bool {
     var tile = recipeLogic.controller as Controller;
     var world = tile.world as IWorld;
-    if (world.getDimension() == 3)
-    {
-        return false;
+    if (!world.remote) {
+        if (world.getDimension() == 3)
+        {
+            return false;
+        }
     }
     return true;
 } as ISetupRecipe;

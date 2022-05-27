@@ -18,6 +18,7 @@ import crafttweaker.text.ITextComponent;
 var definition as ComponentDefinition = MBDRegistry.getDefinition("gtrb:isomerization_platform");
 
 var ebf = definition as ControllerDefinition;
+# 充能赛特斯水晶
 ebf.recipeMap.start()
     .duration(300)
     .inputFluids(<liquid:liquid_mana>*80)
