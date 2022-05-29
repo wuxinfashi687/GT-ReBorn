@@ -1,0 +1,86 @@
+{
+    "renders": [
+        {
+            "image": {
+                "parent": "builtin/image",
+                "image": "customloadingscreen:image/gtrb/bg.png",
+                "position_type": "CENTER",
+                "offset_pos": "CENTER",
+                "position": {
+                    "x": "0",
+                    "y": "0",
+                    "width": "screen_width + 1",
+                    "height": "screen_height + 1"
+                },
+                "texture": {
+                    "x": "0",
+                    "y": "0",
+                    "width": "1",
+                    "height": "1"
+                }
+            }
+        },
+        {
+            "image": {
+                "parent": "builtin/image",
+                "image": "customloadingscreen:image/gtrb/bar_down.png",
+                "position_type": "CENTER",
+                "offset_pos": "CENTER",
+                "position": {
+                    "x": "0",
+                    "y": "screen_height * 0.3",
+                    "width": "screen_width * 0.6",
+                    "height": "10"
+                },
+                "texture": {
+                    "x": "0",
+                    "y": "0",
+                    "width": "1",
+                    "height": "1"
+                }
+            }
+        },
+        {
+            "image": {
+                "parent": "builtin/image",
+                "image": "customloadingscreen:image/gtrb/bar_up.png",
+                "position_type": "CENTER",
+                "offset_pos": "CENTER",
+                "position": {
+                    "x": "-screen_width * 0.3 + percentage * screen_width * 0.3",
+                    "y": "screen_height * 0.3",
+                    "width": "percentage * screen_width * 0.6",
+                    "height": "10"
+                },
+                "texture": {
+                    "x": "0",
+                    "y": "0",
+                    "width": "percentage",
+                    "height": "1"
+                }
+            }
+        },
+        {
+            "image": {
+                "parent": "builtin/text",
+                "image": "customloadingscreen:image/gtrb/ascii.png",
+                "position_type": "CENTER",
+                "offset_pos": "CENTER",
+                "text": "(floor(percentage * 100)) + '.' + (floor(percentage * 1000) % 10) + '%'",
+                "position": {
+                    "x": "0",
+                    "y": "screen_height * 0.3 - 20",
+                    "width": "0",
+                    "height": "0"
+                },
+                "colour": "0xFFFFFFFF"
+            }
+        }
+    ],
+    "variables": {
+
+    },
+    "functions": [],
+    "factories": [],
+    "action" : []
+}

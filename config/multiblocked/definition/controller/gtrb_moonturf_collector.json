@@ -1,0 +1,204 @@
+{
+  "consumeCatalyst": false,
+  "location": "gtrb:moonturf_collector",
+  "traits": {},
+  "allowRotate": true,
+  "showInJei": true,
+  "baseRenderer": {
+    "state": {
+      "id": "gregtech:turbine_casing",
+      "meta": 6
+    },
+    "type": "blockstate"
+  },
+  "isOpaqueCube": false,
+  "basePattern": {
+    "structureDir": [
+      "BACK",
+      "UP",
+      "RIGHT"
+    ],
+    "pattern": [
+      [
+        "AAAAA",
+        "  B  ",
+        "  B  ",
+        "  B  ",
+        "     ",
+        "     ",
+        "     ",
+        "     "
+      ],
+      [
+        "AAAAA",
+        " CCC ",
+        "  D  ",
+        "  D  ",
+        "  D  ",
+        "     ",
+        "     ",
+        "     "
+      ],
+      [
+        "@AAAA",
+        "BCECB",
+        "BD DB",
+        "BD DB",
+        " D D ",
+        "  D  ",
+        "  D  ",
+        "  D  "
+      ],
+      [
+        "AAAAA",
+        " CCC ",
+        "  D  ",
+        "  D  ",
+        "  D  ",
+        "     ",
+        "     ",
+        "     "
+      ],
+      [
+        "AAAAA",
+        "  B  ",
+        "  B  ",
+        "  B  ",
+        "     ",
+        "     ",
+        "     ",
+        "     "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "gregtech:turbine_casing",
+            "meta": 6
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "gtrb:moonturf_collector",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "gregtech:boiler_casing",
+            "meta": 2
+          }
+        ],
+        "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "gregtech:turbine_casing",
+            "meta": 3
+          }
+        ],
+        "type": "states"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "gregtech:meta_block_frame_1875",
+            "meta": 5
+          }
+        ],
+        "type": "states"
+      },
+      "E": {
+        "states": [
+          {
+            "id": "gregtech:meta_block_compressed_1875",
+            "meta": 5
+          }
+        ],
+        "type": "states"
+      },
+      "F": {
+        "blocks": [
+          {
+            "id": "gtrb:mv_energy_input_casing"
+          }
+        ],
+        "type": "blocks",
+        "io": "IN"
+      },
+      "G": {
+        "blocks": [
+          {
+            "id": "gtrb:mv_fluid_input_bus"
+          }
+        ],
+        "type": "blocks",
+        "io": "IN"
+      },
+      "H": {
+        "blocks": [
+          {
+            "id": "gtrb:mv_item_output_bus"
+          }
+        ],
+        "type": "blocks",
+        "io": "OUT"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A",
+        "F",
+        "G",
+        "H"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "E"
+      ]
+    }
+  },
+  "recipeMap": "moontrup"
+}

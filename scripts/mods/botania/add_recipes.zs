@@ -5,9 +5,11 @@ created by 2022.05.05
 
 import mods.botania.Apothecary;
 import mods.botania.ManaInfusion;
+import mods.jei.JEI.hide;
 
 # 研究台
-Apothecary.addRecipe(<researchtable:table>, [
+hide(<researchtable:table>);
+Apothecary.addRecipe(<gtrb:researcher>, [
     <botania:altar>, <botania:specialflower>.withTag({type: "hydroangeas"})
     ]);
 

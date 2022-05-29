@@ -23,3 +23,4 @@ mv_item_output_bus.name=Item Output Bus
 magic_steel_block.name=Magic Steel Casing
 automatic_condensation_plant.name=Automatic Condensation Plant
 moonturf_collector.name=Moonturf Collector
+researcher.name=Researcher

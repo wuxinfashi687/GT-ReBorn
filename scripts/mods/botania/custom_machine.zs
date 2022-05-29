@@ -3,82 +3,106 @@ created by 2022.05.02
 此脚本为植物魔法自定义机器配方部分
 */
 
+import mods.gregtech.recipe.RecipeMap;
+
 # 基础Mana生产器
 recipes.addShaped(<gtrb:basic_mana_machine>, [
-    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>],
+    [<botania:livingrock>, <gtrb:basic_botania_card>.reuse(), <botania:livingrock>],
     [<botania:livingrock>, <ore:frameGtMagicOre>, <botania:livingrock>], 
     [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>]
 ]);
 
 # 基础魔法发电机
 recipes.addShaped(<gtrb:basic_magic_generator>, [
-    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>],
+    [<botania:livingrock>, <gtrb:basic_botania_card>.reuse(), <botania:livingrock>],
     [<libvulpes:coil0:4>, <ore:frameGtMagicOre>, <libvulpes:coil0:4>],
     [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>]
 ]);
 
 # 基础魔法合金炉
 recipes.addShaped(<gtrb:basic_magic_alloy_furnace>, [
-    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>],
+    [<botania:livingrock>, <gtrb:basic_botania_card>.reuse(), <botania:livingrock>],
     [<ore:craftingFurnace>, <ore:frameGtMagicOre>, <ore:craftingFurnace>],
     [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>]
 ]);
 
 # 基础mana离心机
 recipes.addShaped(<gtrb:centrifuge>, [
-    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>],
+    [<botania:livingrock>, <gtrb:basic_botania_card>.reuse(), <botania:livingrock>],
     [<ore:plateDoubleMagicOre>, <ore:frameGtMagicOre>, <ore:plateDoubleMagicOre>],
     [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>]
 ]);
 
 # 活石机械方块
-recipes.addShaped(<gtrb:basic_living_rock_block>, [
-    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>],
-    [<ore:plateMagicOre>, <gregtech:machine:986>, <ore:plateMagicOre>],
-    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>]
-]);
+assembler.recipeBuilder()
+    .inputs([<botania:livingrock>*8, <ore:plateMagicOre>*2, <gregtech:machine:986>])
+    .notConsumable(<gtrb:botania_auto_control_card>)
+    .outputs([<gtrb:basic_living_rock_block>])
+    .duration(600)
+    .EUt(12)
+    .buildAndRegister();
 
 # 基础mana输入仓
-recipes.addShaped(<gtrb:basic_mana_output_bus>, [
-    [null, <botania:managlass>, null],
-    [null, <gtrb:basic_living_rock_block>, null],
-    [null, null, null]
-]);
+assembler.recipeBuilder()
+    .inputs([<botania:managlass>, <gtrb:basic_living_rock_block>])
+    .notConsumable(<gtrb:botania_auto_control_card>)
+    .outputs(<gtrb:basic_mana_output_bus>)
+    .duration(600)
+    .EUt(12)
+    .buildAndRegister();
 
 # 基础mana输出总线
-recipes.addShaped(<gtrb:basic_mana_item_output_bus>, [
-    [null, <gtrb:basic_living_rock_block>, null],
-    [null, <botania:opencrate>, null],
-    [null, null, null]
-]);
+assembler.recipeBuilder()
+    .inputs([<gtrb:basic_living_rock_block>, <botania:opencrate>])
+    .notConsumable(<gtrb:botania_auto_control_card>)
+    .circuit(1)
+    .outputs(<gtrb:basic_mana_item_output_bus>)
+    .duration(600)
+    .EUt(12)
+    .buildAndRegister();
 
 # 基础mana输入总线
-recipes.addShaped(<gtrb:basic_mana_input_bus>, [
-    [null, <botania:opencrate>, null],
-    [null, <gtrb:basic_living_rock_block>, null],
-    [null, null, null]
-]);
+assembler.recipeBuilder()
+    .inputs([<gtrb:basic_living_rock_block>, <botania:opencrate>])
+    .notConsumable(<gtrb:botania_auto_control_card>)
+    .circuit(2)
+    .outputs(<gtrb:basic_mana_input_bus>)
+    .duration(600)
+    .EUt(12)
+    .buildAndRegister();
 
 # 活木机械方块
-recipes.addShaped(<gtrb:basic_living_wood_block>, [
-    [<botania:livingwood:1>, <botania:livingwood:1>, <botania:livingwood:1>],
-    [<ore:plateMagicOre>, <gregtech:machine:986>, <ore:plateMagicOre>],
-    [<botania:livingwood:1>, <botania:livingwood:1>, <botania:livingwood:1>]
-]);
+assembler.recipeBuilder()
+    .inputs([<botania:livingwood:1>*6, <ore:plateMagicOre>*2, <gregtech:machine:986>])
+    .notConsumable(<gtrb:botania_auto_control_card>)
+    .outputs(<gtrb:basic_living_wood_block>)
+    .duration(600)
+    .EUt(12)
+    .buildAndRegister();
 
 # 大型mana磨粉机
-recipes.addShaped(<gtrb:large_macerator>, [
-    [<gregtech:meta_item_1:127>, <ore:frameGtMagicOre>, <gregtech:meta_item_1:127>],
-    [<ore:plateMagicSteel>, <gtrb:basic_living_rock_block>, <ore:plateMagicSteel>],
-    [<ore:circuitLv>, <botania:rune:1>, <ore:circuitLv>]
-]);
+assembler.recipeBuilder()
+    .inputs([
+        <gregtech:meta_item_1:127>*2, <ore:frameGtMagicOre>, <ore:circuitLv>*2, 
+        <gtrb:basic_living_rock_block>, <botania:rune:1>
+        ])
+    .notConsumable(<gtrb:basic_botania_auto_machine_card>)
+    .outputs(<gtrb:large_macerator>)
+    .duration(600)
+    .EUt(12)
+    .buildAndRegister();
 
 # 异构转化台
-recipes.addShaped(<gtrb:isomerization_platform>, [
-    [<botania:managlass>, <ore:circuitLv>, <botania:managlass>],
-    [<ore:plateMagicSteel>, <gtrb:basic_living_rock_block>, <ore:plateMagicSteel>],
-    [<botania:managlass>, <ore:plateMagicOre>, <botania:managlass>]
-]);
+assembler.recipeBuilder()
+    .inputs([
+        <botania:managlass>*4, <ore:circuitLv>, <gtrb:basic_living_rock_block>, 
+        <ore:plateMagicSteel>*2, <ore:plateMagicOre>
+        ])
+    .notConsumable(<gtrb:basic_botania_auto_machine_card>)
+    .outputs(<gtrb:isomerization_platform>)
+    .duration(600)
+    .EUt(12)
+    .buildAndRegister();
 
 # 自动凝矿工厂
 recipes.addShaped(<gtrb:automatic_condensation_plant>, [
