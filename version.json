@@ -37,12 +37,12 @@
     "text": "Hello, welcome to play ",       
     "color": "gold"     
     }, {
-    "text": "TestPack!",
+    "text": "Gtrb!",
     "color": "aqua"
     }, {
     "text": "\n"
     }, {
-    "text": "Join our discord server!",
+    "text": "Join our discord server!\n",
     "bold": true,           
     "underlined": true,        
     "color": "blue",          
