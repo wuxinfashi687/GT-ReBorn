@@ -17,3 +17,10 @@ MaterialBuilder(32500, "liquid_mana")
     .fluidTemp(300)
     .color(0x00BFFF)
     .build();
+
+# 巫妖王流体
+MaterialBuilder(32501, "faioebfuufha")
+    .fluid(FluidTypes.LIQUID, false)
+    .fluidTemp(300)
+    .color(0x5F9EA0)
+    .build();

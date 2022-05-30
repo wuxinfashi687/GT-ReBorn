@@ -22,3 +22,5 @@ mv_item_input_bus.name=物品输入总线
 mv_item_output_bus.name=物品输出总线
 magic_steel_block.name=魔力钢机械方块
 automatic_condensation_plant.name=自动凝矿工厂
+moonturf_collector.name=月面土采集器
+researcher.name=研究站
