@@ -24,3 +24,10 @@ MaterialBuilder(32501, "faioebfuufha")
     .fluidTemp(300)
     .color(0x5F9EA0)
     .build();
+
+# 红色科技溶液
+MaterialBuilder(32502, "red_tech_liquid")
+    .fluid(FluidTypes.LIQUID, true)
+    .fluidTemp(300)
+    .color(0xDC143C)
+    .build();

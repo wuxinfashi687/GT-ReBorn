@@ -1,14 +1,14 @@
 {
-	x: 7.5d,
+	x: 3.0d,
 	y: 0.0d,
 	dependencies: [
-		"b15e924f"
+		"c60d195b"
 	],
 	tasks: [{
-		uid: "8ffd506f",
+		uid: "21ea5692",
 		type: "item",
 		items: [{
-			item: "gtrb:basic_botania_card"
+			item: "tconstruct:materials"
 		}]
 	}]
 }

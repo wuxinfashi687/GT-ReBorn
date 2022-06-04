@@ -1,6 +1,10 @@
 {
+	title: "基本电路板",
 	x: 21.5d,
 	y: -1.5d,
+	text: [
+		""
+	],
 	dependencies: [
 		"10cb9855"
 	],

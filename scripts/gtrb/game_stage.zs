@@ -3,7 +3,7 @@ created by 2022.05.04
 此脚本为游戏阶段部分
 */
 
-# priority 8998
+/*# priority 8998
 
 import mods.recipestages.Recipes.setRecipeStage;
 import crafttweaker.item.IItemStack;
@@ -43,4 +43,4 @@ var basic_botania_auto_machine_items as IItemStack[] = [
 
 for i, item in basic_botania_auto_machine_items {
     setRecipeStage("basic_botania_auto_machine", item);
-}
+}*/

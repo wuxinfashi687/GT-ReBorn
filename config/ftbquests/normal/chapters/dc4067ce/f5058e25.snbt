@@ -1,0 +1,18 @@
+{
+	title: "友情提示",
+	x: 27.5d,
+	y: -1.5d,
+	shape: "diamond",
+	description: "先搓一组电路板总没错的",
+	text: [
+		"随着自己不断的制造新的机器，你会发现电路板总是不够的。那么怎么解决呢？搓一组不就好了。"
+	],
+	dependencies: [
+		"829a0676"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "ee5343e4",
+		type: "checkmark"
+	}]
+}

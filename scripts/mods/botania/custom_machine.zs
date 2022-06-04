@@ -33,6 +33,13 @@ recipes.addShaped(<gtrb:centrifuge>, [
     [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>]
 ]);
 
+# 自动种植站
+recipes.addShaped(<gtrb:auto_planter>, [
+    [<botania:livingrock>, <gtrb:basic_botania_card>.reuse(), <botania:livingrock>],
+    [<botania:livingrock>, <gregtech:machine_casing:1>, <botania:livingrock>],
+    [<gregtech:meta_plate:30004>, <botania:livingrock>, <gregtech:meta_plate:30004>]
+]);
+
 # 活石机械方块
 assembler.recipeBuilder()
     .inputs([<botania:livingrock>*8, <ore:plateMagicOre>*2, <gregtech:machine:986>])

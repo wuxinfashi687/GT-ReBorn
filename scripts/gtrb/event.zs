@@ -21,7 +21,7 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
         event.player.sendChat("欢迎来到这个世界,请查看任务书开始你的主线!");
         //event.player.executeCommand("clear");
         //event.player.dropItem(true);
-        event.player.give(<minecraft:stone>*10);
+        //event.player.give(<minecraft:stone>*10);
     }
 
     var patched = {loggedIn: data.loggedIn.asInt() + 1} as IData;

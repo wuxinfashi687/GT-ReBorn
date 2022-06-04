@@ -1,0 +1,19 @@
+{
+	title: "拉丝儿",
+	x: 1.0d,
+	y: 0.5d,
+	description: "基础线材轧机",
+	text: [
+		"在你一次次搓电路板的过程中你就会发现，把锭砸成板板然后再剪成线太浪费了。那么是时候找一个机器来提高产量了。"
+	],
+	dependencies: [
+		"834cf664"
+	],
+	tasks: [{
+		uid: "0580f64b",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 620"
+		}]
+	}]
+}
