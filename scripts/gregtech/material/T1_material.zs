@@ -123,3 +123,24 @@ recipes.addShaped(<fluxnetworks:fluxcore>, [
     [<minecraft:obsidian>, <minecraft:ender_eye>, <minecraft:obsidian>],
     [<fluxnetworks:flux>, <gregification:gf_meta_item:4>, <fluxnetworks:flux>]
 ]);
+
+# 流体管道
+recipes.addShaped(<enderio:item_liquid_conduit>, [
+    [<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>],
+    [<tconstruct:clear_glass>, <tconstruct:clear_glass>, <tconstruct:clear_glass>],
+    [<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>]
+]);
+
+# 物品管道
+recipes.addShaped(<enderio:item_item_conduit>, [
+    [<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>],
+    [<gregtech:meta_ingot:335>, <gregtech:meta_ingot:335>, <gregtech:meta_ingot:335>],
+    [<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>]
+]);
+
+# 高压流体管道
+recipes.addShaped(<enderio:item_liquid_conduit:1>*16, [
+    [<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>],
+    [<appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:quartz_glass>],
+    [<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>]
+]);

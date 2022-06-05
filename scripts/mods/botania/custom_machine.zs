@@ -42,9 +42,9 @@ recipes.addShaped(<gtrb:auto_planter>, [
 
 # 活石机械方块
 assembler.recipeBuilder()
-    .inputs([<botania:livingrock>*8, <ore:plateMagicOre>*2, <gregtech:machine:986>])
+    .inputs([<botania:livingrock>*8, <ore:plateMagicOre>*2, <gregtech:machine_casing:1>])
     .notConsumable(<gtrb:botania_auto_control_card>)
-    .outputs([<gtrb:basic_living_rock_block>])
+    .outputs([<gtrb:basic_living_rock_block>*2])
     .duration(600)
     .EUt(12)
     .buildAndRegister();
@@ -80,9 +80,9 @@ assembler.recipeBuilder()
 
 # 活木机械方块
 assembler.recipeBuilder()
-    .inputs([<botania:livingwood:1>*6, <ore:plateMagicOre>*2, <gregtech:machine:986>])
+    .inputs([<botania:livingwood:1>*6, <ore:plateMagicOre>*2, <gregtech:machine_casing:1>])
     .notConsumable(<gtrb:botania_auto_control_card>)
-    .outputs(<gtrb:basic_living_wood_block>)
+    .outputs(<gtrb:basic_living_wood_block>*2)
     .duration(600)
     .EUt(12)
     .buildAndRegister();

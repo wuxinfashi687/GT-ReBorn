@@ -98,6 +98,15 @@
         "type": "blocks",
         "io": "IN"
       },
+      "E": {
+        "blocks": [
+          {
+            "id": "gtrb:mv_output_energy_bus"
+          }
+        ],
+        "type": "blocks",
+        "io": "OUT"
+      },
       "any": {
         "type": "any"
       }
@@ -112,12 +121,13 @@
       "A": [
         "A",
         "C",
-        "D"
+        "D",
+        "E"
       ],
       "B": [
         "B"
       ]
     }
   },
-  "recipeMap": "empty"
+  "recipeMap": "mana_generator"
 }
