@@ -1,0 +1,19 @@
+{
+	title: "神州平板",
+	x: -5.5d,
+	y: 6.5d,
+	description: "基础卷板机",
+	text: [
+		"两个锭一个板===>一个锭一个板。妈妈再也不用担心我锻造锤没有耐久了。"
+	],
+	dependencies: [
+		"834cf664"
+	],
+	tasks: [{
+		uid: "e2c0b10e",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 140"
+		}]
+	}]
+}

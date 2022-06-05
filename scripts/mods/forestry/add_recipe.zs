@@ -10,3 +10,8 @@ recipes.addShaped(<forestry:farm_crops>, [
     [<tconstruct:clear_glass>, <ore:circuitLv>, <tconstruct:clear_glass>]
 ]);
 
+# 堆肥
+recipes.addShaped(<forestry:fertilizer_bio>, [
+    [<minecraft:dirt>, <ore:listAllfruit>],
+    [null, null]
+]);

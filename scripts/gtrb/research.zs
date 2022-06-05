@@ -3,7 +3,7 @@ created by 2022.05.03
 此脚本为研究台部分
 */
 
-# priority 8999
+/*# priority 8999
 
 import mods.ResearchTable;
 import ResearchTable.Category;
@@ -43,5 +43,5 @@ ResearchTable.builder("basic_botania_auto_machine", botania_)
     .setTitle("基础植魔自动化装置")
     .addCondition(<gtrb:red_tech_bottle>*128)
     .setRewardStages("basic_botania_auto_machine")
-    .build();
+    .build();*/
     

@@ -1,0 +1,25 @@
+{
+  "canShared": true,
+  "location": "gtrb:mv_output_energy_bus",
+  "traits": {
+    "gtce_energy": {
+      "cIO": 1,
+      "gIO": 2,
+      "x": 55,
+      "y": 68,
+      "width": 60,
+      "height": 18,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "capacity": 10000
+    }
+  },
+  "allowRotate": true,
+  "showInJei": true,
+  "baseRenderer": {
+    "baseTexture": "multiblocked:blocks/gregtech_base",
+    "frontTexture": "multiblocked:gregtech_ceu_icon",
+    "formedAsController": true,
+    "type": "gregtech"
+  },
+  "isOpaqueCube": false
+}

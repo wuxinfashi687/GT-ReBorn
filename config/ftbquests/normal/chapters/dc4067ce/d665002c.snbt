@@ -5,8 +5,10 @@
 		"b15e924f"
 	],
 	tasks: [{
-		uid: "1f1e4b91",
-		type: "gamestage",
-		stage: "basic_botania"
+		uid: "8ffd506f",
+		type: "item",
+		items: [{
+			item: "gtrb:basic_botania_card"
+		}]
 	}]
 }

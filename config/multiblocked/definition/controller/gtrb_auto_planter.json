@@ -1,0 +1,104 @@
+{
+  "consumeCatalyst": false,
+  "location": "gtrb:auto_planter",
+  "traits": {
+    "item": [
+      {
+        "cIO": 2,
+        "gIO": 0,
+        "x": 45,
+        "y": 53,
+        "autoIO": true
+      },
+      {
+        "cIO": 1,
+        "gIO": 2,
+        "x": 105,
+        "y": 53,
+        "autoIO": true
+      },
+      {
+        "cIO": 1,
+        "gIO": 2,
+        "x": 128,
+        "y": 53,
+        "autoIO": true
+      },
+      {
+        "cIO": 1,
+        "gIO": 2,
+        "x": 105,
+        "y": 75,
+        "autoIO": true
+      },
+      {
+        "cIO": 1,
+        "gIO": 2,
+        "x": 128,
+        "y": 75,
+        "autoIO": true
+      }
+    ],
+    "background": "multiblocked:textures/magic_centrifuge_gui.png",
+    "fluid": [
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "x": 45,
+        "y": 75,
+        "autoIO": true,
+        "tC": 4000
+      }
+    ]
+  },
+  "allowRotate": true,
+  "showInJei": true,
+  "baseRenderer": {
+    "baseTexture": "multiblocked:blocks/gregtech_base",
+    "frontTexture": "multiblocked:blocks/gregtech_front",
+    "type": "gregtech"
+  },
+  "isOpaqueCube": false,
+  "basePattern": {
+    "structureDir": [
+      "BACK",
+      "UP",
+      "RIGHT"
+    ],
+    "pattern": [
+      [
+        "@"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "controller": {
+        "location": "gtrb:auto_planter",
+        "type": "component"
+      },
+      "air": {
+        "type": "air"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "-": [
+        "air"
+      ]
+    }
+  },
+  "recipeMap": "auto_plant"
+}
